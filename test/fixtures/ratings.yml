@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  value: 1
+  quip: 
+
+two:
+  value: 1
+  quip: 
