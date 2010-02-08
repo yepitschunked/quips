@@ -5128,3 +5128,943 @@ Rendering template within layouts/quips
 Rendering quips/index
 Rendered quips/_quips_header (0.00016)
 Completed in 0.01864 (53 reqs/sec) | Rendering: 0.00896 (48%) | DB: 0.00135 (7%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 21:25:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;36;1mQuip Load (0.001447)[0m   [0;1mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00010)
+Completed in 0.02217 (45 reqs/sec) | Rendering: 0.01223 (55%) | DB: 0.00145 (6%) | 200 OK [http://stillraging.net/]
+
+
+Processing QuipsController#new (for 76.103.173.2 at 2010-02-07 21:25:42) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"new", "controller"=>"quips"}
+Rendering template within layouts/quips
+Rendering quips/new
+Rendered quips/_quips_header (0.00008)
+Completed in 0.05427 (18 reqs/sec) | Rendering: 0.04409 (81%) | DB: 0.00000 (0%) | 200 OK [http://stillraging.net/quips/new]
+
+
+Processing QuipsController#create (for 76.103.173.2 at 2010-02-07 21:25:46) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"commit"=>"Create", "quip"=>{"date(1i)"=>"2010", "submitter"=>"asdfsadf", "date(2i)"=>"2", "date(3i)"=>"8", "quip"=>"asdfasdfasdf", "source"=>"vasdf"}, "authenticity_token"=>"7413877e124c4b5c75cf9067fa27eacc388342d9", "action"=>"create", "controller"=>"quips"}
+  [4;35;1mQuip Create (0.000513)[0m   [0mINSERT INTO "quips" ("created_at", "submitter", "updated_at", "quip", "date", "source") VALUES('2010-02-08 05:25:46', 'asdfsadf', '2010-02-08 05:25:46', 'asdfasdfasdf', '2010-02-08', 'vasdf')[0m
+Redirected to http://stillraging.net:8000/quips/6
+Completed in 0.01719 (58 reqs/sec) | DB: 0.00051 (2%) | 302 Found [http://stillraging.net/quips]
+
+
+Processing QuipsController#show (for 76.103.173.2 at 2010-02-07 21:25:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiNRdWlwIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRlZC4G
+OgpAdXNlZHsGOwdG--ed267b91b1a717222d0bf8feedb1eb1e6f02ab85
+  Parameters: {"action"=>"show", "id"=>"6", "controller"=>"quips"}
+  [4;36;1mQuip Load (0.000452)[0m   [0;1mSELECT * FROM "quips" WHERE ("quips"."id" = 6) [0m
+Rendering template within layouts/quips
+Rendering quips/show
+Rendered quips/_quips_header (0.00010)
+Completed in 0.01568 (63 reqs/sec) | Rendering: 0.00507 (32%) | DB: 0.00045 (2%) | 200 OK [http://stillraging.net/quips/6]
+  [4;36;1mSQL (0.000567)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000373)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000278)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateQuips (20100127024607)
+  [4;35;1mSQL (0.000277)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddQuipColumn (20100127030248)
+  [4;36;1mSQL (0.000277)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateRatings (20100208054418)
+  [4;35;1mSQL (0.000276)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000201)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.002946)[0m   [0mCREATE TABLE "ratings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "value" integer DEFAULT NULL NULL, "quip_id" integer DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.014137)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100208054418')[0m
+  [4;35;1mSQL (0.000267)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000263)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000091)[0m   [0mPRAGMA index_list("quips")[0m
+  [4;36;1mSQL (0.000068)[0m   [0;1mPRAGMA index_list("ratings")[0m
+  [4;36;1mSQL (0.000933)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000360)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000272)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000249)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateRatings (20100208054418)
+  [4;36;1mSQL (0.000243)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.178977)[0m   [0mDROP TABLE "ratings"[0m
+  [4;36;1mSQL (0.003185)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100208054418'[0m
+  [4;35;1mSQL (0.000172)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000218)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000221)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list("quips")[0m
+  [4;36;1mSQL (0.000601)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000216)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000203)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateQuips (20100127024607)
+  [4;35;1mSQL (0.000204)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddQuipColumn (20100127030248)
+  [4;36;1mSQL (0.000211)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddVotesToQuip (20100208055423)
+  [4;35;1mSQL (0.000203)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000143)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.002750)[0m   [0mALTER TABLE "quips" ADD "votes" integer[0m
+  [4;36;1mSQL (0.003152)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.001482)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100208055423')[0m
+  [4;36;1mSQL (0.000372)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000308)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000097)[0m   [0;1mPRAGMA index_list("quips")[0m
+  [4;36;1mSQL (0.000858)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:03:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;36;1mQuip Load (0.001683)[0m   [0;1mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00010)
+Completed in 0.02300 (43 reqs/sec) | Rendering: 0.01285 (55%) | DB: 0.00168 (7%) | 200 OK [http://stillraging.net/]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:04:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001508)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00011)
+Completed in 0.01929 (51 reqs/sec) | Rendering: 0.00926 (47%) | DB: 0.00151 (7%) | 200 OK [http://stillraging.net/]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:08:23) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;36;1mQuip Load (0.001272)[0m   [0;1mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00007)
+Completed in 0.01756 (56 reqs/sec) | Rendering: 0.01026 (58%) | DB: 0.00127 (7%) | 200 OK [http://stillraging.net/]
+
+
+Processing QuipsController#show (for 76.103.173.2 at 2010-02-07 22:08:26) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"show", "id"=>"vote", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.000162)[0m   [0mSELECT * FROM "quips" WHERE ("quips"."id" = 0) [0m
+
+
+ActiveRecord::RecordNotFound (Couldn't find Quip with ID=vote):
+    /vendor/rails/activerecord/lib/active_record/base.rb:1379:in `find_one'
+    /vendor/rails/activerecord/lib/active_record/base.rb:1362:in `find_from_ids'
+    /vendor/rails/activerecord/lib/active_record/base.rb:537:in `find'
+    /app/controllers/quips_controller.rb:20:in `show'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/victor/projects/quips/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:08:41) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;36;1mQuip Load (0.001046)[0m   [0;1mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+
+
+ActionView::TemplateError (undefined method `stringify_keys' for 2:Fixnum) on line #35 of quips/index.html.erb:
+32: <div>
+33: <% for quip in @quips %>
+34:     <%= link_to "\##{quip.id}", quip %>
+35:     <%= link_to "+", vote_url, quip.id %>
+36:     (<%=h quip.votes %>)
+37:     <div class="quip_text">
+38:         <%=simple_format(html_escape(quip.quip)) %>
+
+    vendor/rails/actionpack/lib/action_view/helpers/url_helper.rb:203:in `link_to'
+    app/views/quips/index.html.erb:35:in `_run_erb_47app47views47quips47index46html46erb'
+    app/views/quips/index.html.erb:33:in `each'
+    app/views/quips/index.html.erb:33:in `_run_erb_47app47views47quips47index46html46erb'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `execute'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:35:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `send'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `custom'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:160:in `call'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:160:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:154:in `each'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:154:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/quips_controller.rb:8:in `index'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/victor/projects/quips/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:08:50) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001530)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00012)
+Completed in 0.01913 (52 reqs/sec) | Rendering: 0.00947 (49%) | DB: 0.00153 (7%) | 200 OK [http://stillraging.net/]
+
+
+Processing QuipsController#vote (for 76.103.173.2 at 2010-02-07 22:08:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"vote", "id"=>"2", "controller"=>"quips"}
+  [4;36;1mQuip Update (0.001969)[0m   [0;1mUPDATE "quips" SET "votes" = "votes" + 1 WHERE ("id" = '2') [0m
+Redirected to http://stillraging.net:8000/quips
+Completed in 0.01182 (84 reqs/sec) | DB: 0.00197 (16%) | 302 Found [http://stillraging.net/quips/vote/2]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:08:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B0Y=--81893a3d2554242c940edfcdc9ba9a7f981ddb2e
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001546)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00010)
+Completed in 0.01872 (53 reqs/sec) | Rendering: 0.00856 (45%) | DB: 0.00155 (8%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#vote (for 76.103.173.2 at 2010-02-07 22:08:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B1Q=--31f90a187ec390cc74ceea6a31aa5282e66b4d94
+  Parameters: {"action"=>"vote", "id"=>"3", "controller"=>"quips"}
+  [4;36;1mQuip Update (0.186870)[0m   [0;1mUPDATE "quips" SET "votes" = "votes" + 1 WHERE ("id" = '3') [0m
+Redirected to http://stillraging.net:8000/quips
+Completed in 0.19739 (5 reqs/sec) | DB: 0.18687 (94%) | 302 Found [http://stillraging.net/quips/vote/3]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:08:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B0Y=--81893a3d2554242c940edfcdc9ba9a7f981ddb2e
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001512)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00010)
+Completed in 0.02044 (48 reqs/sec) | Rendering: 0.00822 (40%) | DB: 0.00151 (7%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#vote (for 76.103.173.2 at 2010-02-07 22:08:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B1Q=--31f90a187ec390cc74ceea6a31aa5282e66b4d94
+  Parameters: {"action"=>"vote", "id"=>"2", "controller"=>"quips"}
+  [4;36;1mQuip Update (0.252945)[0m   [0;1mUPDATE "quips" SET "votes" = "votes" + 1 WHERE ("id" = '2') [0m
+Redirected to http://stillraging.net:8000/quips
+Completed in 0.25986 (3 reqs/sec) | DB: 0.25294 (97%) | 302 Found [http://stillraging.net/quips/vote/2]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:08:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B0Y=--81893a3d2554242c940edfcdc9ba9a7f981ddb2e
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001035)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00011)
+Completed in 0.01288 (77 reqs/sec) | Rendering: 0.00621 (48%) | DB: 0.00103 (8%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#vote (for 76.103.173.2 at 2010-02-07 22:09:36) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B1Q=--31f90a187ec390cc74ceea6a31aa5282e66b4d94
+  Parameters: {"action"=>"vote", "id"=>"5", "controller"=>"quips"}
+  [4;36;1mQuip Update (0.001743)[0m   [0;1mUPDATE "quips" SET "votes" = "votes" + 1 WHERE ("id" = '5') [0m
+Redirected to http://stillraging.net:8000/quips
+Completed in 0.01143 (87 reqs/sec) | DB: 0.00174 (15%) | 302 Found [http://stillraging.net/quips/vote/5]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:09:36) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B0Y=--81893a3d2554242c940edfcdc9ba9a7f981ddb2e
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001491)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00010)
+Completed in 0.01739 (57 reqs/sec) | Rendering: 0.00798 (45%) | DB: 0.00149 (8%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:10:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B1Q=--31f90a187ec390cc74ceea6a31aa5282e66b4d94
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;36;1mQuip Load (0.001306)[0m   [0;1mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00007)
+Completed in 0.01797 (55 reqs/sec) | Rendering: 0.01040 (57%) | DB: 0.00131 (7%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:10:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001056)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00007)
+Completed in 0.01256 (79 reqs/sec) | Rendering: 0.00562 (44%) | DB: 0.00106 (8%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:10:44) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;36;1mQuip Load (0.001070)[0m   [0;1mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00008)
+Completed in 0.01266 (79 reqs/sec) | Rendering: 0.00563 (44%) | DB: 0.00107 (8%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:10:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001047)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00007)
+Completed in 0.01267 (78 reqs/sec) | Rendering: 0.00568 (44%) | DB: 0.00105 (8%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:11:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;36;1mQuip Load (0.001031)[0m   [0;1mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00007)
+Completed in 0.01229 (81 reqs/sec) | Rendering: 0.00569 (46%) | DB: 0.00103 (8%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:11:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001069)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00007)
+Completed in 0.01242 (80 reqs/sec) | Rendering: 0.00569 (45%) | DB: 0.00107 (8%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:11:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;36;1mQuip Load (0.001050)[0m   [0;1mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00008)
+Completed in 0.01245 (80 reqs/sec) | Rendering: 0.00567 (45%) | DB: 0.00105 (8%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:12:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001545)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00015)
+Completed in 0.02100 (47 reqs/sec) | Rendering: 0.01127 (53%) | DB: 0.00155 (7%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:12:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;36;1mQuip Load (0.001546)[0m   [0;1mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00010)
+Completed in 0.01925 (51 reqs/sec) | Rendering: 0.00949 (49%) | DB: 0.00155 (8%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:13:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;36;1mQuip Load (0.001715)[0m   [0;1mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+
+
+ActionView::TemplateError (undefined method `has_key?' for "up":String) on line #36 of quips/index.html.erb:
+33: <% for quip in @quips %>
+34:     <span style="font-family: monospace;">
+35:     <%= link_to "\##{quip.id}", quip %>
+36:     <%= link_to "+", vote_url(quip.id, "up") %>(<%=h quip.votes %>)
+37:     </span>
+38:     <div class="quip_text">
+39:         <%=simple_format(html_escape(quip.quip)) %>
+
+    (eval):3:in `vote_url'
+    app/views/quips/index.html.erb:36:in `_run_erb_47app47views47quips47index46html46erb'
+    app/views/quips/index.html.erb:33:in `each'
+    app/views/quips/index.html.erb:33:in `_run_erb_47app47views47quips47index46html46erb'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `execute'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:35:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `send'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `custom'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:160:in `call'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:160:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:154:in `each'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:154:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/quips_controller.rb:8:in `index'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/victor/projects/quips/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:18:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001042)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00007)
+Completed in 0.01570 (63 reqs/sec) | Rendering: 0.00905 (57%) | DB: 0.00104 (6%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:18:33) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;36;1mQuip Load (0.001514)[0m   [0;1mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00010)
+Completed in 0.01982 (50 reqs/sec) | Rendering: 0.01013 (51%) | DB: 0.00151 (7%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:18:42) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001557)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00007)
+Completed in 0.01745 (57 reqs/sec) | Rendering: 0.00763 (43%) | DB: 0.00156 (8%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:18:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;36;1mQuip Load (0.001570)[0m   [0;1mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00010)
+Completed in 0.02039 (49 reqs/sec) | Rendering: 0.01059 (51%) | DB: 0.00157 (7%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing ApplicationController#index (for 76.103.173.2 at 2010-02-07 22:20:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+
+
+SyntaxError (/home/victor/projects/quips/app/controllers/quips_controller.rb:109: syntax error, unexpected $end, expecting kEND):
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_file'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:214:in `load_file'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:95:in `require_or_load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:467:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:479:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/inflector.rb:283:in `constantize'
+    /vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:143:in `constantize'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/victor/projects/quips/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:21:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001513)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00010)
+Completed in 0.01847 (54 reqs/sec) | Rendering: 0.00885 (47%) | DB: 0.00151 (8%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#vote (for 76.103.173.2 at 2010-02-07 22:21:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--3dfd8aca193794f867086b961cefb67521b8421d
+  Parameters: {"action"=>"vote", "id"=>"2", "type"=>"up", "controller"=>"quips"}
+  [4;36;1mQuip Update (0.002690)[0m   [0;1mUPDATE "quips" SET "votes" = "votes" + 1 WHERE ("id" = '2') [0m
+Redirected to http://stillraging.net:8000/quips
+Completed in 0.01249 (80 reqs/sec) | DB: 0.00269 (21%) | 302 Found [http://stillraging.net/quips/vote/2?type=up]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:21:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B0Y=--81893a3d2554242c940edfcdc9ba9a7f981ddb2e
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001525)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00012)
+Completed in 0.01820 (54 reqs/sec) | Rendering: 0.00867 (47%) | DB: 0.00152 (8%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#vote (for 76.103.173.2 at 2010-02-07 22:21:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B1Q=--31f90a187ec390cc74ceea6a31aa5282e66b4d94
+  Parameters: {"action"=>"vote", "id"=>"2", "type"=>"down", "controller"=>"quips"}
+  [4;36;1mQuip Update (0.004905)[0m   [0;1mUPDATE "quips" SET "votes" = "votes" - 1 WHERE ("id" = '2') [0m
+Redirected to http://stillraging.net:8000/quips
+Completed in 0.01452 (68 reqs/sec) | DB: 0.00490 (33%) | 302 Found [http://stillraging.net/quips/vote/2?type=down]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:21:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B0Y=--81893a3d2554242c940edfcdc9ba9a7f981ddb2e
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001473)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00010)
+Completed in 0.01803 (55 reqs/sec) | Rendering: 0.00862 (47%) | DB: 0.00147 (8%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#vote (for 76.103.173.2 at 2010-02-07 22:21:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B1Q=--31f90a187ec390cc74ceea6a31aa5282e66b4d94
+  Parameters: {"action"=>"vote", "id"=>"2", "type"=>"down", "controller"=>"quips"}
+  [4;36;1mQuip Update (0.001519)[0m   [0;1mUPDATE "quips" SET "votes" = "votes" - 1 WHERE ("id" = '2') [0m
+Redirected to http://stillraging.net:8000/quips
+Completed in 0.00835 (119 reqs/sec) | DB: 0.00152 (18%) | 302 Found [http://stillraging.net/quips/vote/2?type=down]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:21:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B0Y=--81893a3d2554242c940edfcdc9ba9a7f981ddb2e
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001017)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00007)
+Completed in 0.01260 (79 reqs/sec) | Rendering: 0.00603 (47%) | DB: 0.00102 (8%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#vote (for 76.103.173.2 at 2010-02-07 22:21:33) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B1Q=--31f90a187ec390cc74ceea6a31aa5282e66b4d94
+  Parameters: {"action"=>"vote", "id"=>"2", "type"=>"up", "controller"=>"quips"}
+  [4;36;1mQuip Update (0.073628)[0m   [0;1mUPDATE "quips" SET "votes" = "votes" + 1 WHERE ("id" = '2') [0m
+Redirected to http://stillraging.net:8000/quips
+Completed in 0.08056 (12 reqs/sec) | DB: 0.07363 (91%) | 302 Found [http://stillraging.net/quips/vote/2?type=up]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:21:33) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B0Y=--81893a3d2554242c940edfcdc9ba9a7f981ddb2e
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001049)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00007)
+Completed in 0.01284 (77 reqs/sec) | Rendering: 0.00610 (47%) | DB: 0.00105 (8%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#vote (for 76.103.173.2 at 2010-02-07 22:21:34) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B1Q=--31f90a187ec390cc74ceea6a31aa5282e66b4d94
+  Parameters: {"action"=>"vote", "id"=>"2", "type"=>"down", "controller"=>"quips"}
+  [4;36;1mQuip Update (0.338770)[0m   [0;1mUPDATE "quips" SET "votes" = "votes" - 1 WHERE ("id" = '2') [0m
+Redirected to http://stillraging.net:8000/quips
+Completed in 0.34571 (2 reqs/sec) | DB: 0.33877 (97%) | 302 Found [http://stillraging.net/quips/vote/2?type=down]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:21:34) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B0Y=--81893a3d2554242c940edfcdc9ba9a7f981ddb2e
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001049)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00007)
+Completed in 0.01270 (78 reqs/sec) | Rendering: 0.00607 (47%) | DB: 0.00105 (8%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#vote (for 76.103.173.2 at 2010-02-07 22:21:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B1Q=--31f90a187ec390cc74ceea6a31aa5282e66b4d94
+  Parameters: {"action"=>"vote", "id"=>"2", "type"=>"down", "controller"=>"quips"}
+  [4;36;1mQuip Update (1.774963)[0m   [0;1mUPDATE "quips" SET "votes" = "votes" - 1 WHERE ("id" = '2') [0m
+Redirected to http://stillraging.net:8000/quips
+Completed in 1.78567 (0 reqs/sec) | DB: 1.77496 (99%) | 302 Found [http://stillraging.net/quips/vote/2?type=down]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:21:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B0Y=--81893a3d2554242c940edfcdc9ba9a7f981ddb2e
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001049)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00007)
+Completed in 0.01275 (78 reqs/sec) | Rendering: 0.00601 (47%) | DB: 0.00105 (8%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#vote (for 76.103.173.2 at 2010-02-07 22:21:40) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B1Q=--31f90a187ec390cc74ceea6a31aa5282e66b4d94
+  Parameters: {"action"=>"vote", "id"=>"2", "type"=>"down", "controller"=>"quips"}
+  [4;36;1mQuip Update (0.001636)[0m   [0;1mUPDATE "quips" SET "votes" = "votes" - 1 WHERE ("id" = '2') [0m
+Redirected to http://stillraging.net:8000/quips
+Completed in 0.01141 (87 reqs/sec) | DB: 0.00164 (14%) | 302 Found [http://stillraging.net/quips/vote/2?type=down]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:21:40) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B0Y=--81893a3d2554242c940edfcdc9ba9a7f981ddb2e
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001540)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00010)
+Completed in 0.07056 (14 reqs/sec) | Rendering: 0.06092 (86%) | DB: 0.00154 (2%) | 200 OK [http://stillraging.net/quips]
+
+
+Processing QuipsController#vote (for 76.103.173.2 at 2010-02-07 22:21:41) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B1Q=--31f90a187ec390cc74ceea6a31aa5282e66b4d94
+  Parameters: {"action"=>"vote", "id"=>"2", "type"=>"up", "controller"=>"quips"}
+  [4;36;1mQuip Update (0.001587)[0m   [0;1mUPDATE "quips" SET "votes" = "votes" + 1 WHERE ("id" = '2') [0m
+Redirected to http://stillraging.net:8000/quips
+Completed in 0.01174 (85 reqs/sec) | DB: 0.00159 (13%) | 302 Found [http://stillraging.net/quips/vote/2?type=up]
+
+
+Processing QuipsController#index (for 76.103.173.2 at 2010-02-07 22:21:41) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2NmMzAzOWZiNWY2YTdkYjRkN2Q1Y2RjYTM4MTIx
+YjkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhBWb3RlIGFkZGVkLgY6CkB1c2VkewY7B0Y=--81893a3d2554242c940edfcdc9ba9a7f981ddb2e
+  Parameters: {"action"=>"index", "controller"=>"quips"}
+  [4;35;1mQuip Load (0.001640)[0m   [0mSELECT * FROM "quips" [0m
+Rendering template within layouts/quips
+Rendering quips/index
+Rendered quips/_quips_header (0.00010)
+Completed in 0.01915 (52 reqs/sec) | Rendering: 0.00899 (46%) | DB: 0.00164 (8%) | 200 OK [http://stillraging.net/quips]

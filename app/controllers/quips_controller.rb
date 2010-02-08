@@ -45,6 +45,7 @@ class QuipsController < ApplicationController
   # POST /quips
   # POST /quips.xml
   def create
+    params[:quip][:votes] = 0
     @quip = Quip.new(params[:quip])
 
     respond_to do |format|
@@ -86,5 +87,23 @@ class QuipsController < ApplicationController
       format.html { redirect_to(quips_url) }
       format.xml  { head :ok }
     end
+  end
+  def vote
+      if params[:type] == "up" 
+        if Quip.increment_counter(:votes, params[:id]) 
+            flash[:notice] = 'Vote added.'
+        else
+            flash[:notice] = 'Could not add vote.'
+        end
+      elsif params[:type] == "down"
+        if Quip.decrement_counter(:votes, params[:id]) 
+            flash[:notice] = 'Vote added.'
+        else
+            flash[:notice] = 'Could not add vote.'
+        end
+      else
+          flash[:notice] = 'Vote type not specified.'
+      end 
+      redirect_to quips_url
   end
 end

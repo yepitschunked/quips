@@ -36,6 +36,7 @@ ActionController::Routing::Routes.draw do |map|
   # map.root :controller => "welcome"
 
   # See how all your routes lay out with "rake routes"
+  map.vote '/quips/vote/:id', :controller => "quips", :action => "vote"
   map.root :controller => "quips"
 
   # Install the default routes as the lowest priority.

@@ -31,7 +31,10 @@
 
 <div>
 <% for quip in @quips %>
+    <span style="font-family: monospace;">
     <%= link_to "\##{quip.id}", quip %>
+    <%= link_to "+", vote_url(quip.id, :type => "up") %>(<%=h quip.votes %>)<%= link_to "-", vote_url(quip.id, :type => "down") %>
+    </span>
     <div class="quip_text">
         <%=simple_format(html_escape(quip.quip)) %>
     </div>
