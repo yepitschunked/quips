@@ -1,0 +1,28 @@
+<h1>Editing quip</h1>
+
+<% form_for(@quip) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :source %><br />
+    <%= f.text_field :source %>
+  </p>
+  <p>
+    <%= f.label :submitter %><br />
+    <%= f.text_field :submitter %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </p>
+  <p>
+    <%= f.label :quip %><br />
+    <%= f.text_area :quip %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @quip %> |
+<%= link_to 'Back', quips_path %>

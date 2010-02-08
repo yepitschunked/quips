@@ -1,0 +1,21 @@
+<p>
+  <b>Source:</b>
+  <%=h @quip.source %>
+</p>
+
+<p>
+  <b>Submitter:</b>
+  <%=h @quip.submitter %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @quip.date %>
+</p>
+<div class="quip_text">
+  <%=simple_format(html_escape(@quip.quip)) %>
+</div>
+
+
+<%= link_to 'Edit', edit_quip_path(@quip) %> |
+<%= link_to 'Back', quips_path %>

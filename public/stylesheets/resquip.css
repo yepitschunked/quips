@@ -1,0 +1,47 @@
+.quip_text {
+    font-family: monospace;
+}
+
+#content {
+    font-family: sans-serif;
+    width: 65em;
+    margin: auto;
+}
+#index_header {
+    border-bottom: 3px solid #651023;
+    padding-bottom: 0.5em;
+    margin-bottom: 5px;
+}
+.index_link {
+    font-size: 16pt; 
+    font-weight: bold;
+    margin-right: 1em;
+}
+.index_link a {
+    color: #AAA;
+    text-decoration: none;
+}
+.index_link a:hover {
+    background: none;
+}
+
+#home a {
+    font-size: 125%;
+    color: #444;
+}
+
+#addnew a:hover {
+    color: #002200;
+}
+#addnew_plus {
+    color: #77CC77;
+}
+#random a:hover {
+    color: #000022;
+}
+#random_O {
+    color: #7777CC;
+}
+
+
+
