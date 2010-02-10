@@ -32,8 +32,20 @@
 <div>
 <% for quip in @quips %>
     <span style="font-family: monospace;">
-    <%= link_to "\##{quip.id}", quip %>
-    <%= link_to "+", vote_url(quip.id, :type => "up") %>(<%=h quip.votes %>)<%= link_to "-", vote_url(quip.id, :type => "down") %>
+        <%= link_to "\##{quip.id}", quip %>
+        <span id=<%=h "plus#{quip.id}"%>>
+        <%= link_to_remote "+", 
+            :url => vote_url(quip.id, :type => "up"),
+            :update => "vote_#{quip.id}",
+            :loading => "$('plus#{quip.id}').update('+');$('minus#{quip.id}').update('-');"%>
+        </span>
+            (<span id="vote_<%=quip.id%>"><%=h quip.votes %></span>)
+        <span id=<%=h "minus#{quip.id}"%>>
+        <%= link_to_remote "-", 
+            :url => vote_url(quip.id, :type => "down"),
+            :update => "vote_#{quip.id}",
+            :loading => "$('minus#{quip.id}').update('-');$('plus#{quip.id}').update('+');"%>
+        </span>
     </span>
     <div class="quip_text">
         <%=simple_format(html_escape(quip.quip)) %>

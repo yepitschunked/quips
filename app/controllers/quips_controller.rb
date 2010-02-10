@@ -90,20 +90,10 @@ class QuipsController < ApplicationController
   end
   def vote
       if params[:type] == "up" 
-        if Quip.increment_counter(:votes, params[:id]) 
-            flash[:notice] = 'Vote added.'
-        else
-            flash[:notice] = 'Could not add vote.'
-        end
+        Quip.increment_counter(:votes, params[:id]) 
       elsif params[:type] == "down"
-        if Quip.decrement_counter(:votes, params[:id]) 
-            flash[:notice] = 'Vote added.'
-        else
-            flash[:notice] = 'Could not add vote.'
-        end
-      else
-          flash[:notice] = 'Vote type not specified.'
-      end 
-      redirect_to quips_url
+        Quip.decrement_counter(:votes, params[:id]) 
+      end
+      render :text => Quip.find(params[:id]).votes
   end
 end

@@ -11,9 +11,9 @@
 </head>
 <body>
 
-<p style="color: green"><%= flash[:notice] %></p>
 <div id="content">
     <%= render :partial => "quips_header" %>
+<p style="color: green"><%= flash[:notice] %></p>
 <%= yield  %>
 </div>
 
