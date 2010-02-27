@@ -1,7 +1,7 @@
 <h1>New quip</h1>
 <% form_for(@quip) do |f| %>
   <%= f.error_messages %>
-  <div style="float:left; width: 22%; margin-right: 5px;">
+  <div style="float:left; margin-right: 15px;">
   <p>
     <%= f.label :source %><br />
     <%= f.text_field :source %>
@@ -15,7 +15,7 @@
     <%= f.date_select :date %>
   </p>
   </div>
-  <div style="float:left; width: 30%; margin-right: 5px;">
+  <div style="float:left; width: 30%; margin-right: 5px; margin-top: -2px;">
   <p>
     <%= f.label :quip %><br />
     <%= f.text_area :quip, :size => "50x8"%>
