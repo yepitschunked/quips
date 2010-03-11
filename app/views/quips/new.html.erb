@@ -1,28 +1,30 @@
 <h1>New quip</h1>
 <% form_for(@quip) do |f| %>
-  <%= f.error_messages %>
-  <div style="float:left; width: 22%; margin-right: 5px;">
-  <p>
-    <%= f.label :source %><br />
-    <%= f.text_field :source %>
-  </p>
-  <p>
-    <%= f.label :submitter %><br />
-    <%= f.text_field :submitter %>
-  </p>
-  <p>
-    <%= f.label :date %><br />
-    <%= f.date_select :date %>
-  </p>
-  </div>
-  <div style="float:left; width: 30%; margin-right: 5px;">
-  <p>
-    <%= f.label :quip %><br />
-    <%= f.text_area :quip, :size => "50x8"%>
-  </p>
-  </div>
-  <p style="clear:both;">
-    <%= f.submit "Create" %>
-  </p>
+    <%= f.error_messages %>
+    <table>
+        <td style="padding-right: 10px">
+            <p style="height:60px;">
+            <%= f.label :source %><br />
+            <%= f.text_field :source %>
+            </p>
+            <p style="height:60px;">
+            <%= f.label :submitter %><br />
+            <%= f.text_field :submitter %>
+            </p>
+            <p style="height:60px;">
+            <%= f.label :date %><br />
+            <%= f.date_select :date %>
+            </p>
+        </td>
+        <td>
+            <p>
+            <%= f.label :quip %><br />
+            <%= f.text_area :quip, :size => "50x8"%>
+            </p>
+            <p style="clear:both;">
+            <%= f.submit "Create" %>
+            </p>
+        </td>
+    </table>
 <% end %>
 
