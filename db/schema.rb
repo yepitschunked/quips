@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(:version => 20100208055423) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "quip"
-    t.integer  "votes"
+    t.integer  "votes",      :default => 0
   end
 
 end
