@@ -1,268 +1,268 @@
-# "If you don't get error messages in your cron, you should be worried." --ferlatte
-# "I just got a warning that something something was ambiguous." -- jim, on perl
-# "You don't need light, you're a programmer." -- cliu
-# "Well, all flavors of regular expressions have *that* in common." -- bsii, on gibberish
-# "I could psuedocode it, but it would be really difficult to do in practice." -- ferlatte, on a perl script repairing a backhoed OCX
-# "Is there an actual quote here that *doesn't* involve programmers?" -- taiche
-# "Well, they're programmers. They can do whatever they want." --US staff
-# "These script kiddies think they're so cool, but they're only 13 and that's not gonna change" -- rohit on DDOS attacks
-# "She's a vegan. So we'll just cook some chicken for dinner." - A US
-# I know the career staff isn't cool, but what about the adults? --rohit, on the coolness of staff
-# "What we need to do is eliminate the concept of a person all together!" ~ rohit, on semester goals (contracts)
-# you know what i'm running on sol? rm -rf hal -- mike tauras, in the process of replacing a disk for sol
-# "I just can't seem to get it out my system! I keep procmailing it away, but it keeps coming back." ~rohit (in reference to Mailman admin spam)
-# Don't DORC around with dicks. -Erik on discussing DORCS with Ian
-# No, the lyrics said "I can stand the scars on my nuts" -Ian Tegebo Yeah, it sounds like "Siberia" to me. -Michael Tauras
-# "Ok, going to add the know to the resident relation." - Rohit, on resident relations
-# "Apparently there are these programmers who live high up on a mountain peak somewhere and can never be disturbed" - A U4 Resident on his account not getting fixed quickly enough
-# "Programming is like sex. One mistake and you have to support for a lifetime."-Natalie
-# "That's what we do at Unit 1, we distract and conquer!" -kititep
-# "Statistically, they're already losers" --Erik, talking about Cha-bo residents in lead staff
-# "Once you go Keenan, you never go back" -Keenanp on his lesbian ex-girlfriend
-# I'm going to the Asian food place in the Asian Ghetto. --Jesse
-# Chris: "Does anyone know how to make ssl happy?" Cyn: "Stroke it.
-# "So that's why the fish cam doesn't point at the couch!" -mattr
-# "So, the new UPS we got is...uh...leaking silver gas." -Erik on, well, the new UPS
-# "You know, this trigger has been giving us nothing but trouble..." Ian, on the Trouble with Triggers
-# Aww, "Kings Quest IV". She's right, _that_ was my favorite childhood game. -tobor
-# On the students from Louisiana: "Should we let them know about Jerjou, who causes hurricanes?" -Jesse
-# "625 = 250 + 3 x 125 (4 clicks to purchase). Resident must have excercised the human capacity for patience by clicking purchase pages 4 times instead of waiting briefly." ~tim
-# It's like rock/scissors/paper...only the paper beat the scissors. -melcher, on the paper shredder jamming
-# Chris: "It's Friday" Graham: "Yeah, it's that day when we don't have school and stuff the next day..." Ian: "There's another day like that, but I usually don't remember it."
-# Something random broke. Ian, about to leave: "Hey! I think I know where to fix that" (Leather jacket flips off, he sits back down)
-# "If you can go one way, you can go the other way." - ccowart
-# "Just so you know, I'm recovering from a long night of drinking" -tobor before a root meeting
-# "Do you know which fast food chain would make bank if they were near campus? Panda Express." "Aaaawww yeeeah..." - two random guys walking by the ResComp area
-# "I'm going to keep spouting buzzwords at you until you get better!" -Ian to an RCC
-# "Just add the coefficient of Wenzhe"
-# Paranoia is a healthy, healthy thing ~alexr, late one night in the office
-# "Erik is like the Rescomp mom" -tobor
-# mattr: "It's Friday night. Why are you all here?" ccowart: "Why are you here?" mattr: "I'm a programmer. I don't have a life!"
-# So basically, what you have is just object oriented with inheritance! ~ Graham on line dancing.
-# "How do I pipe only STDERR to STDIN? Redirects use real files, pipes just create file descriptors..." -Chris "So they're pseudofiles?" -melcher
-# "Well, If you like having control in a Unix system, you might be a sudophile" -mattr
-# "You should leave me alone, I hear nerdiness like mine is contagious." --crh to a CA
-# [insert rescomp story about unix command "df"]; Jesse: That pretty much sums up my work last week.
-# "I need a new strategy... playing dumb is just making me look dumb." --ccowart
-# "You're backside looks very fatherly." -stephanie to ccowart
-# On vim tutor: "Just do it before you go to bed." -yontege
-# Stephanie: "You feign everything." Keenan: "Yes I do. You should see me when I'm in bed."
-# crh to terrio: "You joined the enemy with that sysadmin team. You know that netsec and sysadmin are like *fighting motions* ..."
-# "It's kind of an abuse to animals, but it's also adorable" -mattr on the firefox-dessed-up dog
-# James in humored indignance, "What type of asian do you take me for??" Stephanie, "a half asian"
-# "DO NOT joke about playing trivial pursuit! That is SERIOUS business!" - ccowart
-# Kit: "Are you leaving, Chris?" crh: "Yeah..." Kit: "Cool!"
-# Kit: "Erik, your head is very flat." Erik: "Thank You."
-# Ian: "Seriously..." [hand gesture] "I wan't people to use the books. But not actually use them."
-# "There are no technical people in the room. I mean, if we were using kate, we wouldn't be getting anything done." -mattr
-# It's more like hitting a small nail with a big hammer, not hitting a screw with a penguin ~melcher
-# tobor: "It's not spam, it's targeted advertising. In this case, the target is everyone that has an email addresses." -tobor
-# "You can't read a TWiki about IPSec after coming back from one of Pat's parties." -tobor
-# "I'm not weird I love steak." -jeremydw
-# "I don't need the status. I like being white." ~achang, on his MacBook
-# "Everyone has been granted pages... up to Jesus." Simon Tan COUGAR Tag #1640
-# "It's not going to crash. I know it's not going to crash." *Windows desktop* - jeremydw
-# "You know what I'm running on sal? DROP DATABASE rescomp;" -yontege
-# "I'm hungry enough to eat Chinese Food." -eeady
-# No, 3 vs. 5 is not fun.... 3 vs 5? Impossible! -Devin
-# "Its not unheard of to be put on hold when calling tech support" -- Graham discussing 2-HELP
-# "This phrase, 'Quid Pro Quo' will make you legally INVINCIBLE in court!" -- ian, on sexual harassment mastery
-# "But I like the paraplegic mouse..." - crh on apple mice
-# "Print accounting? We don't know if it's broken or not. It could be working in some dimension X." - Devin
-# "We just need to wait for the child labor to materialize. I'm sure it will." - Dedra
-# 'As you slide down the bannister of life, may the splinters never point your way.' ~ A "fortune cookie" from King Dong's
-# "Yeah, I'm not very good at the whole security thing." -dchen (NetSec)
-# "Eat my cucumber if you love it so much." -terrio
-# "The errors we're seeing are errors that we've never, ever, ever seen before. We tried Googling them and nothing even came up. So, we just hope those computers are messed up." - crh, 1.5 hours before be secure final master is due
-# "Hey, are you Brian Toy?" --a senior staff member to brian
-# "Eat with the RCCs? We have higher standards now! Crossroads." - Simon (Snr. Staff)
-# "I've heard of the mystical/epic beast - this Rohit" - Minh Tran
-# ccowart, "I want to be the one that takes the pain. You can spank me when I do not behave... And I love it when you hurt me" (singing Green Day, or so he says)
-# Dexli: "And UVA doesn't have CalConnects." Parms: "Yeah, they don't have CalConnects; they just have problems."
-# "You just ate my chicken, you bastard." Perry to mht
-# "If you treat your computer well, you treat your women well." --Minh
-# "Coolbeans!" --Wendy ... "There's nothing wrong with coolbeans!" --Vanessa
-# "You know, you can actually type pretty fast with only one finger on one hand." --Tim
-# "Facebook is the asian ghetto [of the internet]...." - dchen
-# "Anybody got a nose hair plucker?!" ~mht
-# "I was taking minutes, and I wasn't listening..." - Anna
-# Minh talking on the phone and typing in terminal.... "The conclusion is... it's broke!" -- Minh
-# "No, no, no, you're not listening to me Perry... call Ian..." -Simon
-# "Would you like a Gentoo LiveCD that _won't_ fubar your computer?" -ccowart
-# "It won't be long before they'll all be taller than you, Dexter." -Perry on Dedra's babies
-# "It tries to catch 'em all" -Vivian, on SCS stopping virus infections
-# "When I grow up I wanna be like Eric (Klavon)!" - Andrew
-# "Why doesn't your script work?" - cowart ... "We used the aggravate-sysadmin module" -mattr
-# "How are your bugs going?" "They hurt! They have teeth!" -mht
-# "I wanna go on death row!" exclaims Lilly
-# "My RCCs come first before my life." - Keenan
-# "LoJack for laptops is $15/month. You could pay for WoW with that... LoJack for laptops is worthless anyway. You could just subpoena the WoW server for connection information and it would be LoJack for free!" -dchen
-# ccowart to dchen: "Can you say your step dad has ever shot a rat in the house with a BB gun?" lilly (shocked): "You have a step dad?"
-# ccowart: "Whats the timeline look like?" Erik: "Did you get the e-mail about that project?" ccowart: "Yeah, but it didn't say anything about a timeline." Erik: "Yeah, there is no timeline. But I think we're moving forward."
-# "Oh well, better to be a Scotty than a La Forge." -terrio
-# "You know Chris, that sort of thing is grounds for dismissal...from LDAP." --Devin to his brother, when Chris killed his X session
-# "Guitar Hero? Oh? It's just like sex. You take what you can get" -- Dexter
-# Jesse> "Sunday I didn't do any work whatsoever. I think I even managed to neglect my personal hygiene." Kristina> "Me too."
-# Jesse> "Kristina, you spell that with a 'K' right?" Kristina> "Yes." Jesse> "Was that your decision or your parents'?" Kristina> "My parents. They wanted to name me after the german girl next door."
-# "Where do you get your clothes? I need to start dressing like you." dchen to melcher
-# "Maybe someday in the future, you can be a dilf." ~Kristina to Brian Toy
-# melcher: "When I was eating doughnuts, I was too health conscious to drink coffee. Now that I'm drinking coffee, I'm too health conscious to eat doughnuts."
-# "The rain is an automatic shower." - Dexter
-# dchen, "You've been in rescomp 4 years?" stephanie, "no, 3." dchen. "You're only two years older? Why are you so much more mature than me?" (This is funny because Stephanie looks 16).
-# "Ian, don't you think that if dchen or Dexter were a girl, they should hook up? It'd be really cute, I really think so." (5 minutes later) "DON'T YOU THINK SO!??" - Lilly
-# "Hey, want to ride the elevator together?" -Kristina to Dchen
-# crh: "I want some more of that terrible pizza." kristina, in exchange: "My leg smells like vinegar."
-# "I like 19 minute meetings" - Greg, at the end of a meeting. "I can only think of 18 things I like better" - George
-# "Real men don't swoon. They dominate." --Victor
-# Anne's Kitchen gives you 50 fries, which is just enough. Well, they're in home fry form, but the two are equivalent if you convert them into "potato units" ~dchen
-# "The Hero has returned." -- Dexter Liu
-# "I have a headache." "There's some ibuprofen in the break room." "No, that's ok. I can tank it." -- Minh Tran
-# "I'm not trained to talk to people..." -- Minh Tran
-# "Maybe I should read up on poker strats on gamefaqs.com" - Dexter Liu
-# jeremydw: "Do you guys know any good dramadies?" crh: "What about those afromantic-scifi-dramadies?"
-# "I'm a pretty little Dutch girl, as pretty as can be. All the boys in the neighborhood are crazy over me!" - Minh
-# "Retarded is my name!~~" - Minh
-# "Hey Chris. We have too many quotes of Minh. Go quote me." - Devin.
-# "...wait... operations coordinator Anna? She's our age? I thought she was like 30!" -Rescomp alum
-# Cowart: "How was the retreat?" Jeremy: "The food was good."
-# "Come with me Randy, I'll teach you everything I know. Which is nothing. Literally nothing. I've been working on it for over a year. Well, I actually know a little more than nothing." - Minh
-# anna, at the end of a lead-staff meeting: "Is that really it? I'm asking purely for the purpose of taking minutes."
-# "I thought you were... coming with me... ?" -Burban
-# crh, to terrio: "my degree is worth more than yours." terrio: "we'll see about that." minh: "devin, can i live in your garage?" terrio: "i won't have a garage. i'll have a stable. with horses." minh: "ohhh, a real mustang!"
-# "Hey hey hey! I'm Dexter and I'm a pretty unicorn" -liuhoting
-# "I think it dropped the LDAP... dongle..." -Liz "Yes... it probably dropped the LDAP dongle..." -Devin
-# "I want to work out so I can extend my life expectancy by 5 years. From 40 to 45 years." - Minh on working out
-# "I really like fruit. I had this pear today..." -jeremydw
-# "Through confusion we rise." -Perry on 150
-# "I'm a unicorn!" -liuhoting
-# "Is that all that's left for you? Sipping a soda?" -Perry, to Dexter, in 125 Cory
-# Vanessa: "Angela has told us she wants statistics." Minh: "Now that she's told us what she wants i'll tell her what i want. I want a raise."
-# Minh: "My lymph node! I might die!" Rune: "I _guarantee_ you will die."
-# "You know that question you asked the other day... is that all I have left? Sipping a soda? Nope. I have chips." -Dexter, to Perry, in 125 Cory, the next day
-# Dchen: "Man, this water's lacking something. Wait, I know what... a sandwich." (after eating two Cheese 'n Stuff sandwiches)
-# "we're not getting rid of some toys. there are some toys you just can't get rid of. *GASP* THE LIGHT BRIGHT?!" - keenanp, in reference to the throwing away of toys
-# "IT CHUNKS!!! IT CHUNKS!!!" - Minh, on his EE122 project
-# "Isn't it a wonderful thing when your favorite internet radio station has been playing your favorite songs for the past 2 hours?"..."it wasnt actually playing internet radio, it was playing my playlist, AAAAARGH" -- jeremy
-# "No, I'm not saying the URL will turn people off. I'm saying ResComp will turn people on" - jeremydw
-# "Don't ask me for logical thinking right now." - anna
-# "i wore it to 7-11" - kristina, referring to her newly-purchased pikachu costume
-# "I'm not making assumptions. I'm guessing!" --mht
-# dennis: "minh, i have some good news for you." minh: "what?! AM I GETTING A CAR?" dennis: "no, no you are not."
-# "Stop making fun of people and help them!" -Dex to Cowart. "But it would kill his only joy in life." -Jerry
-# "I'm glad you're not an RCC." -- Keenan to Cowart
-# crh and terrio walk in with frozen yogurt \ jeremydw: "i am so jealous of you guys" \ crh: "dontcha wish your ice cream were tasty like this"
-# "I haven't seen a movie for a long time.... Wait, I saw one yesterday... Oh wait, that was for film class..." -Nikit
-# "Tough old bastard has lasted a long time." -Dchen referring to homeland
-# "i am a sheep with leadership qualities. i learned that in my high school economics class." - mht
-# "I also have a list of things that programmers don't do well. It's in bugzilla." -dchen
-# "we make mistakes too" - ccowart on irc about a sysadmin script
-# mu: "if anyone asks where i am, i'm getting food and i'll be there soon." zech: "no one's asked"
-# Simon: I can't stand be in the office when he's around
-# jch: "Okay, now for the Cookie bug" randy: "man, that's the most delicious sounding bug I've ever heard of"
-# mht: "alright i need to get my mind off stuff by playing games" terrio: "are you fit to be in this meeting, minh?"
-# "Fine, make it an agenda item, we have time". - Anna (on Minh on being evil with Facebook and the ensuing Lead Staff discussion)
-# ccowart: "Do you want to go drinking tonight?" mht: "I've been drinking a lot lately... It does help."
-# "When the apocalpyse comes, I bet vienna sausages will still be fine." -victor
-# "this is horrible. i've been inside so long my [solar-powered] watch has ran out of batteries. this is the second time it's happened." - perry
-# On getting a reference letter: "I need to find someone to lie!" -lilly
-# "talking about these deadlines... i feel like my integrity is gradually being eroded away" -- dennis, on programmers meeting deadlines
-# "So you're like a Leonardo de Vinci..." -crh "No, I don't have a shell on my back... wait a minute..." -dex
-# "Too close for missles, switching to guns!"
-# "Man why is there so little meat on these bones? Oh wait, they're ribs." -kiyoshi @ outback with new-US-staff
-# Do a barrel roll!!
-# "I couldn't help you in BigFix because I didn't have any envelopes." -dburban
-# "There's no man pages on how to load a gun!" - Dexter
-# "It's ok if I declare war on somebody because I suck at war." -jeremydw
-# "Yeah, and of course you know what comes next... sudo xargs portinstall!" --blee, on the obvious
-# "ack I need a sysadmin" -jch "i need a car" -eleung "my request is more reasonable" -jch
-# "Are you Harry Potter?" -liuhoting upon hearing for the first time there's a scar on jeremydw's head
-# "I need to introduce you to THE GORILLA" -ccowart
-# "I'm just going to sit here and enjoy my curry, while wondering when I'll see the springtime." -dchen
-# "it's like we work in a forgotten basement of some library in kansas" -- anna, referring to the state of office clients
-# "What was that? I'm sorry, I couldn't hear you over the sound of our infrastructure working." -dchen's favorite line
-# "Havent you ever had the urge to pick a random person and follow them home?" -- anna
-# simon: "You're still underpaying..." ccowart: "I owe you twenty two and a half cents..." simon: "I'll keep that in mind."
-# "My RCC career ends in 20 minutes." -victor "So when do you start programming?" -ccowart "In 21 minutes." -dm
-# Simon: "Vote for Dennis Hayashi!" Dex, filling out Simon's voting ballot: "Too late Simon, you're voting for Domukun." Simon: "Gah! My pernament record as a republican!"
-# "If it's anything any sysadmin can do, bug ccowart." -runes
-# "amazingly we have no new bugs" - muqing 6/20/08
-# Mark: It's OK, we'll just play with ourselves...
-# "We're supposed to know all the risks. All of them. Even those that we don't know about." -crh, on the purpose of the Security-X Team
-# "I reached for where the insurance would be, and Be Secure CDs fell out." -kenzan, on Van being GGed
-# "You know the general rule: The better it tastes, the shorter you live" -dex "Well, in that case, I should live forever." -mattea, on DC food
-# "milki, can you poke Gerard? ...not on IRC." -Krithika
-# "Do you even know who Elton John is?" -eeeady "Yeah, sure. He was in the Lion King right?"-Liuhoting
-# mark: "hey melina, i owe you money. 5 dollars?" melina: "yup. i didn't charge you interest. i'm your friend."
-# "Diamonds are forever, but quotes aren't" -- markliu
-# "I'm totally legit." -dex (with a total straight face at Security X-Team)
-# "That's quite a juicy peach you got there!" -chuck at efung "It's a plum." -eleung
-# Dex: "I can't believe how much crap I've been getting from others about fighting you to a draw." Stephanie: "Aw, I didn't know that you went through all that. I should have thrown the fight."
-# Donson: "What are the flowers for?" Mu: "I pissed off my girlfriend this morning." Donson: "Ooo, someone's going to get some good stuff tonight"
-# Mark: "She was Japanase....oh god *said in a lovestruck way*....I mean, I was trying to remember her name."
-# jeffie: "Ah man, I sat on my banana. No wonder my back was so wet..."
-# Irving: You guys are all here!? Brad: It's a Friday, and all we want to do is work for ResComp.
-# What does circe stand for? Captive in room connection excitement? -eleung
-# < kiyoshi> oh my god i forgot to invite my girlfriend to my party
-# 23:49 < kberlin> etymology-la? 23:49 < ccowart> chuck-la? 23:49 < aonwiler> kberlin: fail - la
-# "Have a good.... night." -briandef "Evening." -dex "No, I mean night. I hope you have a terribly sh*tty evening. But I hope you have a good night." -briandef
-# 00:01 < ccowart> oh shit 00:01 < eleung> you restarted hal again didnt you
-# 11:33 < victor> instead of microsoft we'll be...massivehard
-# 00:25 < eleung> u-g-l-y you aint got no alibi you ugly, yeah yeah you ugly
-# Dex: "I am never pressing the 'Delete All' button ever again."
-# "I do things right the first time. Except it didn't work, so I did it right another time. But that didn't work either, so I did it right a third time." -jeffy
-# 07:25 < kberlin> FACT- 8am classes are the work of the devil 07:38 < krithix> FACT- papers due at 8am are the work of something worse 07:42 < dchen> FACT- Adult male polar bears typically weigh between 352 kilograms and 680 kilograms
-# 12:11 < dchen> man, if I ever become a professor, I'm going to make a hella shitty class 12:11 < dchen> it'll be called like "Practical Systems Administration" 12:11 < dchen> and immediately after the drop deadline, it'll become a class purely focused on relational algebra
-# "He's a beast. If this were Mario Tennis, he would be Donkey Kong. His power swings can decapitate people." - Dex
-# ccowart: "What's the opposite of immediate gratification?" eeeady: "A relationship?"
-# "They're shiny!" -milki referring to Cindy McCain and Michelle Obama after third presidential debate
-# Mu: "Well I don't know if it's inappropriate as it is... interesting. Anything interesting to me is yeah...probably on the shady side." Anna: "So you have standards now."
-# 20:29 < dm> Magic8Ball: Are you indecisive? 20:29 < Magic8Ball> dm: Go for it 20:29 < dm> Magic8Ball: Go for it? Are you even hearing my question? 20:29 < Magic8Ball> dm: Yes
-# eeeady: Dex, big girls don't cry / Dex: does that mean I'm a girl? / milki: no, at least you're not big
-# "I don't want security in my meetings" - Winsys Lead Dexter
-# "Wow, a car is so much faster than walking" -gms, in awe. "Do you like these horseless carriages gms?" -dm
-# "STOP STEPPING ON THE MINES! IT'S NOT A POWER UP!" -victor at gamenight
-# "I am making small sheets of paper with people's name on them" -ccowart "Is that for hiring?" -willchen "Yes. Yes, that is how we do hiring." -ccowart
-# "* gms loves The Punisher" - gms
-# "Some ancient cultures believed that ramen brought us closer to God." -kberlin on the secret ingredient
-# 23:51 < stephen_tu> kiyoshi: we have computers, who needs women
-# "The people you don't see here have been dealt with." -Anna, on people missing in the December Student Supervisors Monthly Meeting
-# <@stephen_tu> milki: stop failing < ccowart> stephen_tu: that's like telling an alcoholic not to drink
-# "You find it in movies!" -milki, on love
-# "What do you want?" -dm "Obviously not to have intelligent conversation or I would have sat somewhere else" -adam
-# Cowart: "Oh look, jeffy's finally checking his email...from last Wednseday."
-# "Congratulations! I would like to officially offer you the Lead Programmer position for the 2009-2010 academic year." --Mu, "fine TT" --milki
-# "If I went into a company that did $140 million in revenue and they told me that some of their most critical systems are maintained by part time temporary employees, I would tell them they're insane. Here, it's student leadership." - acarlson
-# "DNS? What's that?... (hiring panel explains) WOW. DNS IS AMAZING. I'VE GOT TO GET IN ON THAT," -anonymous Winsys candidate
-# "I need to go to therapy.... but it's soo expensive!!!!" -milki
-# 19:25 < crh> switch $desc_of_librarian ; case 'hot' do ask('out') ; case 'not_hot' do exit ; esac would have been executed
-# "Camping is intense!" -milki "Yeah... wait, why?" -dex "Because there are tents. And you're inside them." -milki
-# The story, just now completed, reads:
-# <@eleung> these submitted applications make me want to cry; <@efung> you can bill that crying time
-# <simon> I know it's a big event, but I don't really have a thing for the Dalai Lama
-# "We sent a mass mail saying 'Help your friends and family at the village' for UVA. We don't really care about helping them, right?" -Anna, on RCC Hiring
-# Kiyoshi: OMG, why do I have to be so handsome?
-# At 17:14 Friday the 13th 2009, acarlson invoked the first ROFLCopter in irc.
-# "I mean, they shouldn't be enthusiastic or excitable or anything right? I want my sysadmins to be the most boring people I know." -mbdriscoll on sysadmin selection criteria
-# "The programmer mission statement is, 'We exist...' " -milki at old / new lead staff retreat
-# "Hello! We are Residential Computing. We control your internet." -aonwiler at Cal Day
-# <milki> one twiki group? <acarlson> yah, or the nails-on-the-chalkboard group as I affectionally refer to it <ccowart> NOTC pronounced NAZI
-# "Maybe we should get him a shirt or something and not a cape. So he doesn't look like a freak." --Anna about giving Dex a sendoff gift
-# "milki, what are you trying to steal from the University this time?" -dex
-# "Little did you know that you were haunted by the ghosts of winsys past..." -crimsonzen. "There are no ghosts of winsys past!" -willchen
-# "Look at how happy she is!" -dex, referring to an NSA career profile picture. "Look at how many monitors she has!" -milki
-# "Hey! We are socializing too" - milki "No, we are just swearing in unison" - kiyoshi during a late night session of CS164 coding
-# "We'll love them, we'll care for them, and then we'll eat them." -Greg Snow, referring to the revival of the rescomp office fish
-# "Having a retreat at the APR might as well be like going to the mountains, there's no cell reception in there!" -briandef
-# "crunch is BC... Before Ccowart" -- ccowart
-# 17:16 < jeffy> i accidentally on hal, what should i do?
-# 13:25 < dchen> "I joined rescomp to meet girls, but all I got was ccowart"
-# 22:25 < willchen> Ah, yes. You should study for your midterm. 22:25 < willchen> We all know what happens if we neglect school 22:25 < hacos> haha, a certain role model exists
-# < TriviaBot> >>> [Astronomy] How many planets are there in our solar system? < tmmecke> 89 < TriviaBot> <<< tmmecke solved this question
-# "Batman is a subset of ninjas! COME ON!!!" -jeffy, on legendary
-# 15:33 < milki> i swear my debugging is logical
-# 70% of all problems lie between chair and keyboard
-# acarlson: "there's just too much stupid out there, not enough money"
-# Meastham: "The last time you had me mess with the db, we got banned from Campus LDAP for an hour." Vinod: "It wasn't THAAAAT bad..."
-# chuck: did you find a charger? wei: i found one, but the holes don't fit
-# "All these UVA people are weird." --wei, on UVA RCC blurbs
-# 16:39 < dm> Magic8Ball: What if I like Thunderbird and not Outlook? 16:39 < Magic8Ball> dm: Outlook not so good
+"If you don't get error messages in your cron, you should be worried." --ferlatte
+"I just got a warning that something something was ambiguous." -- jim, on perl
+"You don't need light, you're a programmer." -- cliu
+"Well, all flavors of regular expressions have *that* in common." -- bsii, on gibberish
+"I could psuedocode it, but it would be really difficult to do in practice." -- ferlatte, on a perl script repairing a backhoed OCX
+"Is there an actual quote here that *doesn't* involve programmers?" -- taiche
+"Well, they're programmers. They can do whatever they want." --US staff
+"These script kiddies think they're so cool, but they're only 13 and that's not gonna change" -- rohit on DDOS attacks
+"She's a vegan. So we'll just cook some chicken for dinner." - A US
+I know the career staff isn't cool, but what about the adults? --rohit, on the coolness of staff
+"What we need to do is eliminate the concept of a person all together!" ~ rohit, on semester goals (contracts)
+you know what i'm running on sol? rm -rf hal -- mike tauras, in the process of replacing a disk for sol
+"I just can't seem to get it out my system! I keep procmailing it away, but it keeps coming back." ~rohit (in reference to Mailman admin spam)
+Don't DORC around with dicks. -Erik on discussing DORCS with Ian
+No, the lyrics said "I can stand the scars on my nuts" -Ian Tegebo Yeah, it sounds like "Siberia" to me. -Michael Tauras
+"Ok, going to add the know to the resident relation." - Rohit, on resident relations
+"Apparently there are these programmers who live high up on a mountain peak somewhere and can never be disturbed" - A U4 Resident on his account not getting fixed quickly enough
+"Programming is like sex. One mistake and you have to support for a lifetime."-Natalie
+"That's what we do at Unit 1, we distract and conquer!" -kititep
+"Statistically, they're already losers" --Erik, talking about Cha-bo residents in lead staff
+"Once you go Keenan, you never go back" -Keenanp on his lesbian ex-girlfriend
+I'm going to the Asian food place in the Asian Ghetto. --Jesse
+Chris: "Does anyone know how to make ssl happy?" Cyn: "Stroke it.
+"So that's why the fish cam doesn't point at the couch!" -mattr
+"So, the new UPS we got is...uh...leaking silver gas." -Erik on, well, the new UPS
+"You know, this trigger has been giving us nothing but trouble..." Ian, on the Trouble with Triggers
+Aww, "Kings Quest IV". She's right, _that_ was my favorite childhood game. -tobor
+On the students from Louisiana: "Should we let them know about Jerjou, who causes hurricanes?" -Jesse
+"625 = 250 + 3 x 125 (4 clicks to purchase). Resident must have excercised the human capacity for patience by clicking purchase pages 4 times instead of waiting briefly." ~tim
+It's like rock/scissors/paper...only the paper beat the scissors. -melcher, on the paper shredder jamming
+Chris: "It's Friday" Graham: "Yeah, it's that day when we don't have school and stuff the next day..." Ian: "There's another day like that, but I usually don't remember it."
+Something random broke. Ian, about to leave: "Hey! I think I know where to fix that" (Leather jacket flips off, he sits back down)
+"If you can go one way, you can go the other way." - ccowart
+"Just so you know, I'm recovering from a long night of drinking" -tobor before a root meeting
+"Do you know which fast food chain would make bank if they were near campus? Panda Express." "Aaaawww yeeeah..." - two random guys walking by the ResComp area
+"I'm going to keep spouting buzzwords at you until you get better!" -Ian to an RCC
+"Just add the coefficient of Wenzhe"
+Paranoia is a healthy, healthy thing ~alexr, late one night in the office
+"Erik is like the Rescomp mom" -tobor
+mattr: "It's Friday night. Why are you all here?" ccowart: "Why are you here?" mattr: "I'm a programmer. I don't have a life!"
+So basically, what you have is just object oriented with inheritance! ~ Graham on line dancing.
+"How do I pipe only STDERR to STDIN? Redirects use real files, pipes just create file descriptors..." -Chris "So they're pseudofiles?" -melcher
+"Well, If you like having control in a Unix system, you might be a sudophile" -mattr
+"You should leave me alone, I hear nerdiness like mine is contagious." --crh to a CA
+[insert rescomp story about unix command "df"]; Jesse: That pretty much sums up my work last week.
+"I need a new strategy... playing dumb is just making me look dumb." --ccowart
+"You're backside looks very fatherly." -stephanie to ccowart
+On vim tutor: "Just do it before you go to bed." -yontege
+Stephanie: "You feign everything." Keenan: "Yes I do. You should see me when I'm in bed."
+crh to terrio: "You joined the enemy with that sysadmin team. You know that netsec and sysadmin are like *fighting motions* ..."
+"It's kind of an abuse to animals, but it's also adorable" -mattr on the firefox-dessed-up dog
+James in humored indignance, "What type of asian do you take me for??" Stephanie, "a half asian"
+"DO NOT joke about playing trivial pursuit! That is SERIOUS business!" - ccowart
+Kit: "Are you leaving, Chris?" crh: "Yeah..." Kit: "Cool!"
+Kit: "Erik, your head is very flat." Erik: "Thank You."
+Ian: "Seriously..." [hand gesture] "I wan't people to use the books. But not actually use them."
+"There are no technical people in the room. I mean, if we were using kate, we wouldn't be getting anything done." -mattr
+It's more like hitting a small nail with a big hammer, not hitting a screw with a penguin ~melcher
+tobor: "It's not spam, it's targeted advertising. In this case, the target is everyone that has an email addresses." -tobor
+"You can't read a TWiki about IPSec after coming back from one of Pat's parties." -tobor
+"I'm not weird I love steak." -jeremydw
+"I don't need the status. I like being white." ~achang, on his MacBook
+"Everyone has been granted pages... up to Jesus." Simon Tan COUGAR Tag #1640
+"It's not going to crash. I know it's not going to crash." *Windows desktop* - jeremydw
+"You know what I'm running on sal? DROP DATABASE rescomp;" -yontege
+"I'm hungry enough to eat Chinese Food." -eeady
+No, 3 vs. 5 is not fun.... 3 vs 5? Impossible! -Devin
+"Its not unheard of to be put on hold when calling tech support" -- Graham discussing 2-HELP
+"This phrase, 'Quid Pro Quo' will make you legally INVINCIBLE in court!" -- ian, on sexual harassment mastery
+"But I like the paraplegic mouse..." - crh on apple mice
+"Print accounting? We don't know if it's broken or not. It could be working in some dimension X." - Devin
+"We just need to wait for the child labor to materialize. I'm sure it will." - Dedra
+'As you slide down the bannister of life, may the splinters never point your way.' ~ A "fortune cookie" from King Dong's
+"Yeah, I'm not very good at the whole security thing." -dchen (NetSec)
+"Eat my cucumber if you love it so much." -terrio
+"The errors we're seeing are errors that we've never, ever, ever seen before. We tried Googling them and nothing even came up. So, we just hope those computers are messed up." - crh, 1.5 hours before be secure final master is due
+"Hey, are you Brian Toy?" --a senior staff member to brian
+"Eat with the RCCs? We have higher standards now! Crossroads." - Simon (Snr. Staff)
+"I've heard of the mystical/epic beast - this Rohit" - Minh Tran
+ccowart, "I want to be the one that takes the pain. You can spank me when I do not behave... And I love it when you hurt me" (singing Green Day, or so he says)
+Dexli: "And UVA doesn't have CalConnects." Parms: "Yeah, they don't have CalConnects; they just have problems."
+"You just ate my chicken, you bastard." Perry to mht
+"If you treat your computer well, you treat your women well." --Minh
+"Coolbeans!" --Wendy ... "There's nothing wrong with coolbeans!" --Vanessa
+"You know, you can actually type pretty fast with only one finger on one hand." --Tim
+"Facebook is the asian ghetto [of the internet]...." - dchen
+"Anybody got a nose hair plucker?!" ~mht
+"I was taking minutes, and I wasn't listening..." - Anna
+Minh talking on the phone and typing in terminal.... "The conclusion is... it's broke!" -- Minh
+"No, no, no, you're not listening to me Perry... call Ian..." -Simon
+"Would you like a Gentoo LiveCD that _won't_ fubar your computer?" -ccowart
+"It won't be long before they'll all be taller than you, Dexter." -Perry on Dedra's babies
+"It tries to catch 'em all" -Vivian, on SCS stopping virus infections
+"When I grow up I wanna be like Eric (Klavon)!" - Andrew
+"Why doesn't your script work?" - cowart ... "We used the aggravate-sysadmin module" -mattr
+"How are your bugs going?" "They hurt! They have teeth!" -mht
+"I wanna go on death row!" exclaims Lilly
+"My RCCs come first before my life." - Keenan
+"LoJack for laptops is $15/month. You could pay for WoW with that... LoJack for laptops is worthless anyway. You could just subpoena the WoW server for connection information and it would be LoJack for free!" -dchen
+ccowart to dchen: "Can you say your step dad has ever shot a rat in the house with a BB gun?" lilly (shocked): "You have a step dad?"
+ccowart: "Whats the timeline look like?" Erik: "Did you get the e-mail about that project?" ccowart: "Yeah, but it didn't say anything about a timeline." Erik: "Yeah, there is no timeline. But I think we're moving forward."
+"Oh well, better to be a Scotty than a La Forge." -terrio
+"You know Chris, that sort of thing is grounds for dismissal...from LDAP." --Devin to his brother, when Chris killed his X session
+"Guitar Hero? Oh? It's just like sex. You take what you can get" -- Dexter
+Jesse> "Sunday I didn't do any work whatsoever. I think I even managed to neglect my personal hygiene." Kristina> "Me too."
+Jesse> "Kristina, you spell that with a 'K' right?" Kristina> "Yes." Jesse> "Was that your decision or your parents'?" Kristina> "My parents. They wanted to name me after the german girl next door."
+"Where do you get your clothes? I need to start dressing like you." dchen to melcher
+"Maybe someday in the future, you can be a dilf." ~Kristina to Brian Toy
+melcher: "When I was eating doughnuts, I was too health conscious to drink coffee. Now that I'm drinking coffee, I'm too health conscious to eat doughnuts."
+"The rain is an automatic shower." - Dexter
+dchen, "You've been in rescomp 4 years?" stephanie, "no, 3." dchen. "You're only two years older? Why are you so much more mature than me?" (This is funny because Stephanie looks 16).
+"Ian, don't you think that if dchen or Dexter were a girl, they should hook up? It'd be really cute, I really think so." (5 minutes later) "DON'T YOU THINK SO!??" - Lilly
+"Hey, want to ride the elevator together?" -Kristina to Dchen
+crh: "I want some more of that terrible pizza." kristina, in exchange: "My leg smells like vinegar."
+"I like 19 minute meetings" - Greg, at the end of a meeting. "I can only think of 18 things I like better" - George
+"Real men don't swoon. They dominate." --Victor
+Anne's Kitchen gives you 50 fries, which is just enough. Well, they're in home fry form, but the two are equivalent if you convert them into "potato units" ~dchen
+"The Hero has returned." -- Dexter Liu
+"I have a headache." "There's some ibuprofen in the break room." "No, that's ok. I can tank it." -- Minh Tran
+"I'm not trained to talk to people..." -- Minh Tran
+"Maybe I should read up on poker strats on gamefaqs.com" - Dexter Liu
+jeremydw: "Do you guys know any good dramadies?" crh: "What about those afromantic-scifi-dramadies?"
+"I'm a pretty little Dutch girl, as pretty as can be. All the boys in the neighborhood are crazy over me!" - Minh
+"Retarded is my name!~~" - Minh
+"Hey Chris. We have too many quotes of Minh. Go quote me." - Devin.
+"...wait... operations coordinator Anna? She's our age? I thought she was like 30!" -Rescomp alum
+Cowart: "How was the retreat?" Jeremy: "The food was good."
+"Come with me Randy, I'll teach you everything I know. Which is nothing. Literally nothing. I've been working on it for over a year. Well, I actually know a little more than nothing." - Minh
+anna, at the end of a lead-staff meeting: "Is that really it? I'm asking purely for the purpose of taking minutes."
+"I thought you were... coming with me... ?" -Burban
+crh, to terrio: "my degree is worth more than yours." terrio: "we'll see about that." minh: "devin, can i live in your garage?" terrio: "i won't have a garage. i'll have a stable. with horses." minh: "ohhh, a real mustang!"
+"Hey hey hey! I'm Dexter and I'm a pretty unicorn" -liuhoting
+"I think it dropped the LDAP... dongle..." -Liz "Yes... it probably dropped the LDAP dongle..." -Devin
+"I want to work out so I can extend my life expectancy by 5 years. From 40 to 45 years." - Minh on working out
+"I really like fruit. I had this pear today..." -jeremydw
+"Through confusion we rise." -Perry on 150
+"I'm a unicorn!" -liuhoting
+"Is that all that's left for you? Sipping a soda?" -Perry, to Dexter, in 125 Cory
+Vanessa: "Angela has told us she wants statistics." Minh: "Now that she's told us what she wants i'll tell her what i want. I want a raise."
+Minh: "My lymph node! I might die!" Rune: "I _guarantee_ you will die."
+"You know that question you asked the other day... is that all I have left? Sipping a soda? Nope. I have chips." -Dexter, to Perry, in 125 Cory, the next day
+Dchen: "Man, this water's lacking something. Wait, I know what... a sandwich." (after eating two Cheese 'n Stuff sandwiches)
+"we're not getting rid of some toys. there are some toys you just can't get rid of. *GASP* THE LIGHT BRIGHT?!" - keenanp, in reference to the throwing away of toys
+"IT CHUNKS!!! IT CHUNKS!!!" - Minh, on his EE122 project
+"Isn't it a wonderful thing when your favorite internet radio station has been playing your favorite songs for the past 2 hours?"..."it wasnt actually playing internet radio, it was playing my playlist, AAAAARGH" -- jeremy
+"No, I'm not saying the URL will turn people off. I'm saying ResComp will turn people on" - jeremydw
+"Don't ask me for logical thinking right now." - anna
+"i wore it to 7-11" - kristina, referring to her newly-purchased pikachu costume
+"I'm not making assumptions. I'm guessing!" --mht
+dennis: "minh, i have some good news for you." minh: "what?! AM I GETTING A CAR?" dennis: "no, no you are not."
+"Stop making fun of people and help them!" -Dex to Cowart. "But it would kill his only joy in life." -Jerry
+"I'm glad you're not an RCC." -- Keenan to Cowart
+crh and terrio walk in with frozen yogurt \ jeremydw: "i am so jealous of you guys" \ crh: "dontcha wish your ice cream were tasty like this"
+"I haven't seen a movie for a long time.... Wait, I saw one yesterday... Oh wait, that was for film class..." -Nikit
+"Tough old bastard has lasted a long time." -Dchen referring to homeland
+"i am a sheep with leadership qualities. i learned that in my high school economics class." - mht
+"I also have a list of things that programmers don't do well. It's in bugzilla." -dchen
+"we make mistakes too" - ccowart on irc about a sysadmin script
+mu: "if anyone asks where i am, i'm getting food and i'll be there soon." zech: "no one's asked"
+Simon: I can't stand be in the office when he's around
+jch: "Okay, now for the Cookie bug" randy: "man, that's the most delicious sounding bug I've ever heard of"
+mht: "alright i need to get my mind off stuff by playing games" terrio: "are you fit to be in this meeting, minh?"
+"Fine, make it an agenda item, we have time". - Anna (on Minh on being evil with Facebook and the ensuing Lead Staff discussion)
+ccowart: "Do you want to go drinking tonight?" mht: "I've been drinking a lot lately... It does help."
+"When the apocalpyse comes, I bet vienna sausages will still be fine." -victor
+"this is horrible. i've been inside so long my [solar-powered] watch has ran out of batteries. this is the second time it's happened." - perry
+On getting a reference letter: "I need to find someone to lie!" -lilly
+"talking about these deadlines... i feel like my integrity is gradually being eroded away" -- dennis, on programmers meeting deadlines
+"So you're like a Leonardo de Vinci..." -crh "No, I don't have a shell on my back... wait a minute..." -dex
+"Too close for missles, switching to guns!"
+"Man why is there so little meat on these bones? Oh wait, they're ribs." -kiyoshi @ outback with new-US-staff
+Do a barrel roll!!
+"I couldn't help you in BigFix because I didn't have any envelopes." -dburban
+"There's no man pages on how to load a gun!" - Dexter
+"It's ok if I declare war on somebody because I suck at war." -jeremydw
+"Yeah, and of course you know what comes next... sudo xargs portinstall!" --blee, on the obvious
+"ack I need a sysadmin" -jch "i need a car" -eleung "my request is more reasonable" -jch
+"Are you Harry Potter?" -liuhoting upon hearing for the first time there's a scar on jeremydw's head
+"I need to introduce you to THE GORILLA" -ccowart
+"I'm just going to sit here and enjoy my curry, while wondering when I'll see the springtime." -dchen
+"it's like we work in a forgotten basement of some library in kansas" -- anna, referring to the state of office clients
+"What was that? I'm sorry, I couldn't hear you over the sound of our infrastructure working." -dchen's favorite line
+"Havent you ever had the urge to pick a random person and follow them home?" -- anna
+simon: "You're still underpaying..." ccowart: "I owe you twenty two and a half cents..." simon: "I'll keep that in mind."
+"My RCC career ends in 20 minutes." -victor "So when do you start programming?" -ccowart "In 21 minutes." -dm
+Simon: "Vote for Dennis Hayashi!" Dex, filling out Simon's voting ballot: "Too late Simon, you're voting for Domukun." Simon: "Gah! My pernament record as a republican!"
+"If it's anything any sysadmin can do, bug ccowart." -runes
+"amazingly we have no new bugs" - muqing 6/20/08
+Mark: It's OK, we'll just play with ourselves...
+"We're supposed to know all the risks. All of them. Even those that we don't know about." -crh, on the purpose of the Security-X Team
+"I reached for where the insurance would be, and Be Secure CDs fell out." -kenzan, on Van being GGed
+"You know the general rule: The better it tastes, the shorter you live" -dex "Well, in that case, I should live forever." -mattea, on DC food
+"milki, can you poke Gerard? ...not on IRC." -Krithika
+"Do you even know who Elton John is?" -eeeady "Yeah, sure. He was in the Lion King right?"-Liuhoting
+mark: "hey melina, i owe you money. 5 dollars?" melina: "yup. i didn't charge you interest. i'm your friend."
+"Diamonds are forever, but quotes aren't" -- markliu
+"I'm totally legit." -dex (with a total straight face at Security X-Team)
+"That's quite a juicy peach you got there!" -chuck at efung "It's a plum." -eleung
+Dex: "I can't believe how much crap I've been getting from others about fighting you to a draw." Stephanie: "Aw, I didn't know that you went through all that. I should have thrown the fight."
+Donson: "What are the flowers for?" Mu: "I pissed off my girlfriend this morning." Donson: "Ooo, someone's going to get some good stuff tonight"
+Mark: "She was Japanase....oh god *said in a lovestruck way*....I mean, I was trying to remember her name."
+jeffie: "Ah man, I sat on my banana. No wonder my back was so wet..."
+Irving: You guys are all here!? Brad: It's a Friday, and all we want to do is work for ResComp.
+What does circe stand for? Captive in room connection excitement? -eleung
+< kiyoshi> oh my god i forgot to invite my girlfriend to my party
+23:49 < kberlin> etymology-la? 23:49 < ccowart> chuck-la? 23:49 < aonwiler> kberlin: fail - la
+"Have a good.... night." -briandef "Evening." -dex "No, I mean night. I hope you have a terribly sh*tty evening. But I hope you have a good night." -briandef
+00:01 < ccowart> oh shit 00:01 < eleung> you restarted hal again didnt you
+11:33 < victor> instead of microsoft we'll be...massivehard
+00:25 < eleung> u-g-l-y you aint got no alibi you ugly, yeah yeah you ugly
+Dex: "I am never pressing the 'Delete All' button ever again."
+"I do things right the first time. Except it didn't work, so I did it right another time. But that didn't work either, so I did it right a third time." -jeffy
+07:25 < kberlin> FACT- 8am classes are the work of the devil 07:38 < krithix> FACT- papers due at 8am are the work of something worse 07:42 < dchen> FACT- Adult male polar bears typically weigh between 352 kilograms and 680 kilograms
+12:11 < dchen> man, if I ever become a professor, I'm going to make a hella shitty class 12:11 < dchen> it'll be called like "Practical Systems Administration" 12:11 < dchen> and immediately after the drop deadline, it'll become a class purely focused on relational algebra
+"He's a beast. If this were Mario Tennis, he would be Donkey Kong. His power swings can decapitate people." - Dex
+ccowart: "What's the opposite of immediate gratification?" eeeady: "A relationship?"
+"They're shiny!" -milki referring to Cindy McCain and Michelle Obama after third presidential debate
+Mu: "Well I don't know if it's inappropriate as it is... interesting. Anything interesting to me is yeah...probably on the shady side." Anna: "So you have standards now."
+20:29 < dm> Magic8Ball: Are you indecisive? 20:29 < Magic8Ball> dm: Go for it 20:29 < dm> Magic8Ball: Go for it? Are you even hearing my question? 20:29 < Magic8Ball> dm: Yes
+eeeady: Dex, big girls don't cry / Dex: does that mean I'm a girl? / milki: no, at least you're not big
+"I don't want security in my meetings" - Winsys Lead Dexter
+"Wow, a car is so much faster than walking" -gms, in awe. "Do you like these horseless carriages gms?" -dm
+"STOP STEPPING ON THE MINES! IT'S NOT A POWER UP!" -victor at gamenight
+"I am making small sheets of paper with people's name on them" -ccowart "Is that for hiring?" -willchen "Yes. Yes, that is how we do hiring." -ccowart
+"* gms loves The Punisher" - gms
+"Some ancient cultures believed that ramen brought us closer to God." -kberlin on the secret ingredient
+23:51 < stephen_tu> kiyoshi: we have computers, who needs women
+"The people you don't see here have been dealt with." -Anna, on people missing in the December Student Supervisors Monthly Meeting
+<@stephen_tu> milki: stop failing < ccowart> stephen_tu: that's like telling an alcoholic not to drink
+"You find it in movies!" -milki, on love
+"What do you want?" -dm "Obviously not to have intelligent conversation or I would have sat somewhere else" -adam
+Cowart: "Oh look, jeffy's finally checking his email...from last Wednseday."
+"Congratulations! I would like to officially offer you the Lead Programmer position for the 2009-2010 academic year." --Mu, "fine TT" --milki
+"If I went into a company that did $140 million in revenue and they told me that some of their most critical systems are maintained by part time temporary employees, I would tell them they're insane. Here, it's student leadership." - acarlson
+"DNS? What's that?... (hiring panel explains) WOW. DNS IS AMAZING. I'VE GOT TO GET IN ON THAT," -anonymous Winsys candidate
+"I need to go to therapy.... but it's soo expensive!!!!" -milki
+19:25 < crh> switch $desc_of_librarian ; case 'hot' do ask('out') ; case 'not_hot' do exit ; esac would have been executed
+"Camping is intense!" -milki "Yeah... wait, why?" -dex "Because there are tents. And you're inside them." -milki
+The story, just now completed, reads:
+<@eleung> these submitted applications make me want to cry; <@efung> you can bill that crying time
+<simon> I know it's a big event, but I don't really have a thing for the Dalai Lama
+"We sent a mass mail saying 'Help your friends and family at the village' for UVA. We don't really care about helping them, right?" -Anna, on RCC Hiring
+Kiyoshi: OMG, why do I have to be so handsome?
+At 17:14 Friday the 13th 2009, acarlson invoked the first ROFLCopter in irc.
+"I mean, they shouldn't be enthusiastic or excitable or anything right? I want my sysadmins to be the most boring people I know." -mbdriscoll on sysadmin selection criteria
+"The programmer mission statement is, 'We exist...' " -milki at old / new lead staff retreat
+"Hello! We are Residential Computing. We control your internet." -aonwiler at Cal Day
+<milki> one twiki group? <acarlson> yah, or the nails-on-the-chalkboard group as I affectionally refer to it <ccowart> NOTC pronounced NAZI
+"Maybe we should get him a shirt or something and not a cape. So he doesn't look like a freak." --Anna about giving Dex a sendoff gift
+"milki, what are you trying to steal from the University this time?" -dex
+"Little did you know that you were haunted by the ghosts of winsys past..." -crimsonzen. "There are no ghosts of winsys past!" -willchen
+"Look at how happy she is!" -dex, referring to an NSA career profile picture. "Look at how many monitors she has!" -milki
+"Hey! We are socializing too" - milki "No, we are just swearing in unison" - kiyoshi during a late night session of CS164 coding
+"We'll love them, we'll care for them, and then we'll eat them." -Greg Snow, referring to the revival of the rescomp office fish
+"Having a retreat at the APR might as well be like going to the mountains, there's no cell reception in there!" -briandef
+"crunch is BC... Before Ccowart" -- ccowart
+17:16 < jeffy> i accidentally on hal, what should i do?
+13:25 < dchen> "I joined rescomp to meet girls, but all I got was ccowart"
+22:25 < willchen> Ah, yes. You should study for your midterm. 22:25 < willchen> We all know what happens if we neglect school 22:25 < hacos> haha, a certain role model exists
+< TriviaBot> >>> [Astronomy] How many planets are there in our solar system? < tmmecke> 89 < TriviaBot> <<< tmmecke solved this question
+"Batman is a subset of ninjas! COME ON!!!" -jeffy, on legendary
+15:33 < milki> i swear my debugging is logical
+70% of all problems lie between chair and keyboard
+acarlson: "there's just too much stupid out there, not enough money"
+Meastham: "The last time you had me mess with the db, we got banned from Campus LDAP for an hour." Vinod: "It wasn't THAAAAT bad..."
+chuck: did you find a charger? wei: i found one, but the holes don't fit
+"All these UVA people are weird." --wei, on UVA RCC blurbs
+16:39 < dm> Magic8Ball: What if I like Thunderbird and not Outlook? 16:39 < Magic8Ball> dm: Outlook not so good

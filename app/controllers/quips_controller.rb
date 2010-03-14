@@ -1,4 +1,5 @@
 class QuipsController < ApplicationController
+  verify :xhr => true, :only => :ajax_autocomplete
   # GET /quips
   # GET /quips.xml
   def index
@@ -9,6 +10,18 @@ class QuipsController < ApplicationController
       format.html # index.html.erb
       format.xml  { render :xml => @quips }
     end
+  end
+
+  def ajax_autocomplete
+      @query = params[:query]
+      if @query.blank?
+        @results = []
+      else
+          @results = Quip.find(:all, :conditions => [ "quip like ?", "%#{@query}%" ])
+      end
+      respond_to do |format|
+        format.json { render :json => @results.to_json(:only => [:id, :quip]) }
+      end
   end
 
   # GET /quips/1

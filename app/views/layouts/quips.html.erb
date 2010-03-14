@@ -10,6 +10,26 @@
   <%= javascript_include_tag :defaults %>
 </head>
 <body>
+Testing search box!!!
+<%= text_field :quip, :quip, :id => "search_box" %>
+<script type="text/javascript">
+    function display_results(transport, search_query) {
+        var field = $('results');
+        var re = RegExp("^(\s|.)*"+search_query+".*", "i");
+        var quips = transport.responseJSON.collect(function(s) {
+                         return re.exec(s.quip)[0];
+                        });
+        field.update(quips);
+    }
+</script>
+<%= observe_field :search_box, :url => {:controller => :quips, :action => :ajax_autocomplete },
+    :frequency => 1,
+    :success => "display_results(request, value)",
+    :with => "'query='+value" 
+%>
+<div id="results">
+    REsults should appear here!
+</div>
 
 <div id="content">
     <%= render :partial => "quips_header" %>

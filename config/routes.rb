@@ -1,5 +1,4 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :quips
 
   # The priority is based upon order of creation: first created -> highest priority.
 
@@ -37,7 +36,9 @@ ActionController::Routing::Routes.draw do |map|
 
   # See how all your routes lay out with "rake routes"
   map.vote '/quips/vote/:id', :controller => "quips", :action => "vote"
+  map.autocomplete_search '/quips/ajax_autocomplete', :controller => "quips", :action => "ajax_autocomplete"
   map.root :controller => "quips"
+  map.resources :quips
 
   # Install the default routes as the lowest priority.
   map.connect ':controller/:action/:id'
