@@ -4,7 +4,6 @@ class QuipsController < ApplicationController
   # GET /quips.xml
   def index
     @quips = Quip.find(:all)
-    @random_quip = @quips[rand(@quips.length)]
 
     respond_to do |format|
       format.html # index.html.erb
@@ -21,6 +20,12 @@ class QuipsController < ApplicationController
       end
       respond_to do |format|
         format.json { render :json => @results.to_json(:only => [:id, :quip]) }
+      end
+  end
+  def autocomplete_test
+    @quips = Quip.find(:all)
+      respond_to do |format|
+          format.html
       end
   end
 

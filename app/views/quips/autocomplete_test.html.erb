@@ -1,0 +1,76 @@
+Testing search box!!!
+<%= text_field :quip, :quip, :id => "search_box" %>
+<script type="text/javascript">
+    var last_query = "";
+    var current_results = [];
+    function highlight_query(search_query, snippet) {
+        var re = RegExp("("+search_query+")", "i");
+        return snippet.replace(re, "<b>$1</b>");
+    }
+    function field_updated(element, value) {
+        value = value.toLowerCase();
+        if(value == "") {
+            current_results = []
+            update_results("");
+            return;
+        }
+
+        // Don't bother for short queries
+        if(value.length < 3) {
+            update_results(value);
+            return;
+        }
+        // If we have existing results, just filter through them
+        var existing_results = current_results.filter(function(s) {
+                return s.quip.toLowerCase().include(value);});
+        if(existing_results.length > 0){
+            current_results = existing_results;
+            update_results(value);
+            return;
+        }
+        // Stop searching if we fail and this query
+        // is continuing the previous one
+        else if(last_query && value.startsWith(last_query) && current_results.length == 0) { 
+            current_results = [];
+            update_results("");
+            return;
+        }
+        last_query = value;
+
+        new Ajax.Request("<%= url_for :controller => :quips, :action=>:ajax_autocomplete %>",
+            {
+              parameters:'query='+value,
+              onSuccess: function(transport) {
+                current_results = transport.responseJSON;
+                update_results(value);} 
+        });
+
+    }
+    function update_results(search_query) {
+        display = current_results.collect(function(s) {
+                lines = s.quip.split('\n');
+                if(lines > 3) {
+                    for(var i=0;i<lines.length;i++) {
+                        if(lines[i].include(search_query)) {
+                            startindex = floor(0, i-1);
+                            endindex=floor(lines.length-1, i+1);
+                            s = lines[startindex]+lines[i]+lines[endindex];
+                            }
+                    }
+                }
+                else
+                    s = s.quip;
+                    s.replace('\n', '<br>');
+                return highlight_query(search_query, s) + "<br>";
+
+                });
+
+        $('results').update(display);
+    }
+    new Form.Element.Observer('search_box', 0.05, field_updated);
+</script>
+<div id="results">
+    REsults should appear here!
+</div>
+<%= render "quips/index" %>
+
