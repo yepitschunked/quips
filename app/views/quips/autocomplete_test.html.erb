@@ -59,13 +59,12 @@ Testing search box!!!
                     }
                 }
                 else
-                    s = s.quip;
-                    s.replace('\n', '<br>');
-                return highlight_query(search_query, s) + "<br>";
+                    s = s.quip.escapeHTML();
+                return highlight_query(search_query,s) + "<br>";
 
                 });
 
-        $('results').update(display.toString().escapeHTML());
+        $('results').update(display);
     }
     new Form.Element.Observer('search_box', 0.05, field_updated);
 </script>
