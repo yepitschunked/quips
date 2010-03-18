@@ -54,13 +54,13 @@ Testing search box!!!
                         if(lines[i].include(search_query)) {
                             start = floor(0, i-1);
                             end=floor(lines.length-1, i+1);
-                            s = lines.slice(start, end).join("<br>");
+                            s = lines.collect(escapeHTML).slice(start, end).join("<br>");
                             }
                     }
                 }
                 else
                 s = s.quip.escapeHTML().replace(/\n/g, "<br>");
-                return highlight_query(search_query,s) + "<br>";
+                return highlight_query(search_query.escapeHTML(),s) + "<br>";
 
                 });
 
