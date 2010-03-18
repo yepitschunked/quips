@@ -65,7 +65,7 @@ Testing search box!!!
 
                 });
 
-        $('results').update(display);
+        $('results').update(display.escapeHTML());
     }
     new Form.Element.Observer('search_box', 0.05, field_updated);
 </script>
