@@ -49,18 +49,21 @@ Testing search box!!!
     function update_results(search_query) {
         display = current_results.collect(function(s) {
                 lines = s.quip.split('\n');
-                if(lines > 3) {
+                var id = s.id;
+                if(lines.length > 3) {
                     for(var i=0;i<lines.length;i++) {
-                        if(lines[i].include(search_query)) {
-                            start = floor(0, i-1);
-                            end=floor(lines.length-1, i+1);
-                            s = lines.collect(escapeHTML).slice(start, end).join("<br>");
+                        if(lines[i].toLowerCase().include(search_query)) {
+                            start = [0, i-1].max();
+                            end=[lines.length, i+2].min();
+                            s = lines.collect(String.escapeHTML).slice(start, end).join("<br>");
+                            break;
                             }
                     }
                 }
                 else
                 s = s.quip.escapeHTML().replace(/\n/g, "<br>");
-                return highlight_query(search_query.escapeHTML(),s) + "<br>";
+                var highlighted = highlight_query(search_query.escapeHTML(),s) + "<br>";
+                return "<a href='/quips/show/"+id+"'>"+highlighted+"</a>";
 
                 });
 
