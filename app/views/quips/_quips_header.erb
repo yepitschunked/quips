@@ -15,10 +15,9 @@
     </span>
     <script>
         $('search_box').observe('click', function(e) {
-          if(this.value == "Search...") {
             this.setStyle({color: "black"});
             this.value="";
-          }
+            this.stopObserving('click');
         });
         create_autocomplete('search_box', 'results');
     </script>
