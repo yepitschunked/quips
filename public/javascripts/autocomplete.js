@@ -36,7 +36,7 @@ function field_updated(element, value) {
   }
   quips_autocompleter.last_query = value;
 
-  new Ajax.Request("/quips/ajax_autocomplete",
+  new Ajax.Request("quips/ajax_autocomplete",
       {
       parameters:'query='+value,
       onSuccess: function(transport) {
