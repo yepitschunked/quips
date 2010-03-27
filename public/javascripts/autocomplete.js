@@ -68,7 +68,7 @@ function update_results(search_query) {
         s = s.quip.escapeHTML().replace(/\n/g, "");
 
       var node = new Element('div', {'class': 'search_result', 'tabindex': 0});
-      node.update('<a href="/quips/show/'+id+'">'+highlight_query(search_query.escapeHTML(),s)+'</a>');
+      node.update('<a href="quips/show/'+id+'">'+highlight_query(search_query.escapeHTML(),s)+'</a>');
       node.observe('mouseover', function(event) {
         $(quips_autocompleter.results_field).current_index = $(quips_autocompleter.results_field).childElements().indexOf(this);
         $(quips_autocompleter.results_field).childElements().invoke('removeClassName', 'selected');

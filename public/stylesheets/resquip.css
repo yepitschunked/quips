@@ -67,7 +67,7 @@ div.quip {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border: 1px solid grey;
-  background: url(/images/searchIcon.gif) no-repeat 3px 1px;
+  background: url(../images/searchIcon.gif) no-repeat 3px 1px;
   height: 16px;
   padding-left: 18px;
   outline: none;
