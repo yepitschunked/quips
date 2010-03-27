@@ -4,7 +4,6 @@ quips_autocompleter.current_results = [];
 quips_autocompleter.completing = true; // should we try to update results upon typing?
 quips_autocompleter.results_field = "";
 quips_autocompleter.search_field = "";
-
 function highlight_query(search_query, snippet) {
   if(snippet) {
     var re = RegExp("("+RegExp.escape(search_query)+")", "i");
@@ -36,7 +35,7 @@ function field_updated(element, value) {
   }
   quips_autocompleter.last_query = value;
 
-  new Ajax.Request("quips/ajax_autocomplete",
+  new Ajax.Request(rel_base+"/quips/ajax_autocomplete",
       {
       parameters:'query='+value,
       onSuccess: function(transport) {
@@ -68,7 +67,7 @@ function update_results(search_query) {
         s = s.quip.escapeHTML().replace(/\n/g, "");
 
       var node = new Element('div', {'class': 'search_result', 'tabindex': 0});
-      node.update('<a href="quips/show/'+id+'">'+highlight_query(search_query.escapeHTML(),s)+'</a>');
+      node.update('<a href="'+rel_base+'/quips/show/'+id+'">'+highlight_query(search_query.escapeHTML(),s)+'</a>');
       node.observe('mouseover', function(event) {
         $(quips_autocompleter.results_field).current_index = $(quips_autocompleter.results_field).childElements().indexOf(this);
         $(quips_autocompleter.results_field).childElements().invoke('removeClassName', 'selected');
