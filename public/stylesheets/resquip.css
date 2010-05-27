@@ -104,6 +104,29 @@ div.quip {
   font-size: 90%;
 }
 
+#sort_options {
+    position: absolute;
+    width: 20%;
+    margin:0;
+    right: 0;
+    top: 0;
+}
+#sort_options a {
+    padding: 3px;
+    display:block;
+    margin-bottom: 3px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+#sort_options a:hover {
+    background: #DDD;
+}
+
+#sort_options #selected_sort {
+    background: grey;
+    color: #FC8; 
+}
+
 
 
 

@@ -3,7 +3,15 @@ class QuipsController < ApplicationController
   # GET /quips
   # GET /quips.xml
   def index
-    @quips = Quip.paginate :page => params[:page], :order => 'created_at DESC'
+    sort = 'id' 
+    direction = 'desc'
+    if params.has_key?(:sort) and Quip.sortable_columns.include?(params[:sort])
+        if params.has_key?(:direction) and Quip.sort_directions.include?(params[:direction])
+            direction = params[:direction]
+        end
+        sort = params[:sort]
+    end
+    @quips = Quip.paginate :page => params[:page], :order => "#{sort} #{direction}"
 
     respond_to do |format|
       format.html # index.html.erb

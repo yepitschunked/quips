@@ -29,7 +29,12 @@
     });
 </script>
 
-<div>
+<div style="position:relative">
+  <div id="sort_options">
+      <a id="<%="selected_sort" if params[:sort]=="votes"%>" href="quips?sort=votes">Highest Rated</a>
+      <a id="<%="selected_sort" if params[:sort]=="date" && params[:direction]==nil%>"href="quips?sort=date">Newest</a>
+      <a id="<%="selected_sort" if params[:sort]=="date" && params[:direction]=="asc"%>"href="quips?sort=date&direction=asc">Oldest</a>
+  </div>
   <% if @quips.length > 0 %>
     <% for quip in @quips %>
         <div class="quip">
