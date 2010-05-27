@@ -3,7 +3,7 @@ class QuipsController < ApplicationController
   # GET /quips
   # GET /quips.xml
   def index
-    @quips = Quip.find(:all)
+    @quips = Quip.paginate :page => params[:page], :order => 'created_at DESC'
 
     respond_to do |format|
       format.html # index.html.erb
@@ -20,12 +20,6 @@ class QuipsController < ApplicationController
       end
       respond_to do |format|
         format.json { render :json => @results.to_json(:only => [:id, :quip]) }
-      end
-  end
-  def autocomplete_test
-    @quips = Quip.find(:all)
-      respond_to do |format|
-          format.html
       end
   end
 

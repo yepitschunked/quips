@@ -37,7 +37,7 @@ ActionController::Routing::Routes.draw do |map|
   # See how all your routes lay out with "rake routes"
   map.vote '/quips/vote/:id', :controller => "quips", :action => "vote"
   map.autocomplete_search '/quips/ajax_autocomplete', :controller => "quips", :action => "ajax_autocomplete"
-  map.autocomplete_test '/quips/autocomplete_test', :controller => "quips", :action => "autocomplete_test"
+
   map.root :controller => "quips"
   map.resources :quips
 
