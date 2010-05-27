@@ -2,6 +2,12 @@
     font-family: monospace;
 }
 
+.quips {
+    width:60em;
+    position:relative;
+}
+
+
 table,td {
     margin: 0px;
     padding: 0px;
