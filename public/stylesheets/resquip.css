@@ -108,7 +108,7 @@ div.quip {
     position: absolute;
     width: 20%;
     margin:0;
-    right: 0;
+    left: -21%;
     top: 0;
 }
 #sort_options a {
