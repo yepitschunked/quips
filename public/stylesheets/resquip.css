@@ -81,7 +81,8 @@ div.quip {
 }
 #results {
   border: 1px solid black;
-  width: 18.4em;
+  background: white;
+  width: 28.4em;
   position: absolute;
   top: 17px;
   left: 0;
@@ -90,7 +91,7 @@ div.quip {
 }
 #results .search_result {
   border-top: 1px solid grey;
-  width: 18.2em;
+  width: 28.2em;
   padding: 2px;
   background: none;
   overflow: hidden;
