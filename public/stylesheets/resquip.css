@@ -2,7 +2,7 @@
     font-family: monospace;
 }
 
-.quips {
+#quips {
     width:60em;
     position:relative;
 }
