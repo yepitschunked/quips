@@ -69,7 +69,7 @@ class QuipsController < ApplicationController
     @quip = Quip.new(params[:quip])
 
     respond_to do |format|
-      if @quip.save
+      if verify_recaptcha(@quip) and @quip.save
         flash[:notice] = 'Quip was successfully created.'
         format.html { redirect_to(@quip) }
         format.xml  { render :xml => @quip, :status => :created, :location => @quip }

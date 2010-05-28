@@ -1,30 +1,32 @@
 <h1>New quip</h1>
 <% form_for(@quip) do |f| %>
     <%= f.error_messages %>
-    <table>
-        <td style="padding-right: 10px">
-            <p style="height:60px;">
-            <%= f.label :source %><br />
-            <%= f.text_field :source %>
-            </p>
-            <p style="height:60px;">
-            <%= f.label :submitter %><br />
-            <%= f.text_field :submitter %>
-            </p>
-            <p style="height:60px;">
-            <%= f.label :date %><br />
-            <%= f.date_select :date %>
-            </p>
-        </td>
-        <td>
-            <p>
-            <%= f.label :quip %><br />
-            <%= f.text_area :quip, :size => "50x8"%>
-            </p>
-            <p style="clear:both;">
+    <%= f.label :date %>:       
+    <%= f.date_select :date %>  
+    <br>
+    <%= f.text_area :quip, :size => "50x7"%>
+    <br>
+            <%= recaptcha_tags %>
             <%= f.submit "Create" %>
-            </p>
-        </td>
-    </table>
+    <script type="text/javascript">
+        $('quip_quip').defaultValue = 'Enter your quip here...';
+        $('quip_quip').observe('focus', function(e) {
+            if(this.value == this.defaultValue) {
+                this.value = "";
+            }
+            this.setStyle({color: 'black'});
+        });
+        $('quip_quip').observe('blur', function(e) {
+            if(this.value == "") {
+                this.value = this.defaultValue;
+                this.setStyle({color: 'grey'});
+            }
+        });
+        $('new_quip').observe('submit', function(e) {
+            if($('quip_quip').value == $('quip_quip').defaultValue) {
+                $('quip_quip').value = "";
+            }
+        });
+    </script>
 <% end %>
 

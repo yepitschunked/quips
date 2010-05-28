@@ -3,5 +3,7 @@ class Quip < ActiveRecord::Base
     @@per_page = 25
     @@sortable_columns = ["votes", "date", "id"]
     @@sort_directions = ["asc", "desc"]
+
+    validates_presence_of :quip
     
 end

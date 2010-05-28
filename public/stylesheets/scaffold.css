@@ -14,12 +14,6 @@ a { color: #a40;
     text-decoration: none;    
 }
 
-.fieldWithErrors {
-  padding: 2px;
-  background-color: red;
-  display: table;
-}
-
 #errorExplanation {
   width: 400px;
   border: 2px solid red;

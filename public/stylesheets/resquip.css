@@ -7,6 +7,17 @@
     position:relative;
 }
 
+div.fieldWithErrors {
+    display:inline;
+}
+
+form.new_quip textarea {
+    font-family: sans-serif;
+    color: grey;
+}
+form.new_quip #quip_submit {
+    font-size:200%;
+}
 
 table,td {
     margin: 0px;
