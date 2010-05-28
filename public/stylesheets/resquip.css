@@ -1,6 +1,19 @@
 .quip_text {
     font-family: monospace;
 }
+ul,ol,li {
+    padding: 0;
+    margin: 0;
+}
+
+ul.horizontal {
+    list-style-type: none;
+}
+ul.horizontal li {
+    display:inline;
+}
+
+
 
 #quips {
     width:60em;

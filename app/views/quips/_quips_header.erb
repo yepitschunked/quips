@@ -1,18 +1,26 @@
+<script>
+    document.observe("dom:loaded", function() {
+        // defined in application.js
+        prepare_hovers();
+    });
+</script>
 <div id="index_header">
-    <span class="index_link" id="home">
-    <%= link_to 'WHAT YOU SAY???', quips_path %>
-    </span>
-    <span class="index_link" id="addnew">
-        <%= link_to '<span id="addnew_plus">+</span> add quip', new_quip_path %> 
-    </span>
-    <span class="index_link" id="random">
-        <%= link_to '<span id="random_O">O</span> random', quip_path("random") %> 
-    </span>
-    <span id="search">
-      <input id="search_box" tabindex=0 value="Search..." />
-    <div id="results" style="display:none;" >
-    </div>
-    </span>
+    <ul class="horizontal">
+        <li class="index_link" id="home">
+        <%= link_to 'WHAT YOU SAY???', quips_path %>
+        </li>
+        <li class="index_link" id="addnew">
+            <%= link_to '<span id="addnew_plus">+</span> add quip', new_quip_path %> 
+        </li>
+        <li class="index_link" id="random">
+            <%= link_to '<span id="random_O">O</span> random', quip_path("random") %> 
+        </li>
+        <li id="search">
+        <input id="search_box" tabindex=0 value="Search..." />
+        <div id="results" style="display:none;" >
+        </div>
+        </li>
+    </ul>
     <script>
         $('search_box').observe('click', function(e) {
             this.setStyle({color: "black"});
