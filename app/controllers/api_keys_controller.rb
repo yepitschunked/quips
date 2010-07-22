@@ -2,8 +2,7 @@ class ApiKeysController < ApplicationController
   before_filter :check_admin_mode, :only => [:index, :destroy]
 
   def check_admin_mode
-    unless true #i'm a hacky hacky switch!
-      flash[:notice] = "You can't go there!"
+    unless false #i'm a hacky hacky switch!
       redirect_to :back 
     end
   end
