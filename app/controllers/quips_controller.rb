@@ -15,7 +15,7 @@ class QuipsController < ApplicationController
           @quips = Quip.paginate :page => params[:page], :order => "created_at asc"
         end
       else
-        @quips = Quip.paginate :page => params[:page]
+        @quips = Quip.paginate :page => params[:page], :order => "created_at desc"
       end
     end
 
