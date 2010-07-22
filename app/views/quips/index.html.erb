@@ -10,6 +10,6 @@
 </div>
 <div id="quip_list">
   <%= render :partial => "quip", :collection => @quips %>
-  <%= will_paginate @quips %>
+  <%= will_paginate @quips unless @quips.nil? %>
 </div>
 

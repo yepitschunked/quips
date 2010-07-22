@@ -1,19 +1,23 @@
 class QuipsController < ApplicationController
   verify :xhr => true, :only => :ajax_autocomplete
+  skip_before_filter :verify_authenticity_token, :only => :create
   # GET /quips
   # GET /quips.xml
   def index
-    @sort = 'id' 
-    direction = 'desc'
-    if params.has_key?(:sort)
-      case params[:sort]
-      when "votes"
-        if params.has_key?(:direction) and Quip.sort_directions.include?(params[:direction])
-            direction = params[:direction]
+    if Quip.exists?
+      if params.has_key?(:sort)
+        case params[:sort]
+        when "votes"
+          @quips = Quip.paginate :page => params[:page], :order => "votes desc"
+        when "newest"
+          @quips = Quip.paginate :page => params[:page], :order => "created_at desc"
+        when "oldest"
+          @quips = Quip.paginate :page => params[:page], :order => "created_at asc"
         end
-        @sort = params[:sort]
+      else
+        @quips = Quip.paginate :page => params[:page]
+      end
     end
-    @quips = Quip.paginate :page => params[:page], :order => "#{@sort} #{direction}"
 
     respond_to do |format|
       format.html # index.html.erb
@@ -22,24 +26,24 @@ class QuipsController < ApplicationController
   end
 
   def ajax_autocomplete
-      @query = params[:query]
-      if @query.blank?
-        @results = []
-      else
-          @results = Quip.find(:all, :conditions => [ "quip like ?", "%#{@query}%" ])
-      end
-      respond_to do |format|
-        format.json { render :json => @results.to_json(:only => [:id, :quip]) }
-      end
+    @query = params[:query]
+    if @query.blank?
+      @results = []
+    else
+      @results = Quip.find(:all, :conditions => [ "quip like ?", "%#{@query}%" ])
+    end
+    respond_to do |format|
+      format.json { render :json => @results.to_json(:only => [:id, :quip]) }
+    end
   end
 
   # GET /quips/1
   # GET /quips/1.xml
   def show
     if params[:id] == "random" then
-        @quip = Quip.find(:first, :offset => rand(Quip.count))
+      @quip = Quip.find(:first, :offset => rand(Quip.count))
     else
-        @quip = Quip.find(params[:id])
+      @quip = Quip.find(params[:id])
     end
 
     respond_to do |format|
@@ -69,9 +73,19 @@ class QuipsController < ApplicationController
   def create
     params[:quip][:votes] = 0
     @quip = Quip.new(params[:quip])
+    should_save = false
+    if params[:apikey]
+      key = ApiKey.find_by_key(params[:apikey])
+      if key
+        params[:quip][:submitter] = key.username
+        should_save = true
+      end
+    else
+      should_save = verify_recaptcha(@quip)
+    end
 
     respond_to do |format|
-      if verify_recaptcha(@quip) and @quip.save
+      if should_save and @quip.save
         flash[:notice] = 'Quip was successfully created.'
         format.html { redirect_to(@quip) }
         format.xml  { render :xml => @quip, :status => :created, :location => @quip }
@@ -111,11 +125,11 @@ class QuipsController < ApplicationController
     end
   end
   def vote
-      if params[:type] == "up" 
-        Quip.increment_counter(:votes, params[:id]) 
-      elsif params[:type] == "down"
-        Quip.decrement_counter(:votes, params[:id]) 
-      end
-      render :text => Quip.find(params[:id]).votes
+    if params[:type] == "up" 
+      Quip.increment_counter(:votes, params[:id]) 
+    elsif params[:type] == "down"
+      Quip.decrement_counter(:votes, params[:id]) 
+    end
+    render :text => Quip.find(params[:id]).votes
   end
 end
