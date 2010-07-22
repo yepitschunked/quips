@@ -3,15 +3,17 @@ class QuipsController < ApplicationController
   # GET /quips
   # GET /quips.xml
   def index
-    sort = 'id' 
+    @sort = 'id' 
     direction = 'desc'
-    if params.has_key?(:sort) and Quip.sortable_columns.include?(params[:sort])
+    if params.has_key?(:sort)
+      case params[:sort]
+      when "votes"
         if params.has_key?(:direction) and Quip.sort_directions.include?(params[:direction])
             direction = params[:direction]
         end
-        sort = params[:sort]
+        @sort = params[:sort]
     end
-    @quips = Quip.paginate :page => params[:page], :order => "#{sort} #{direction}"
+    @quips = Quip.paginate :page => params[:page], :order => "#{@sort} #{direction}"
 
     respond_to do |format|
       format.html # index.html.erb

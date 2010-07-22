@@ -1,4 +1,4 @@
-.quip_text {
+.quip_display {
     font-family: monospace;
 }
 ul,ol,li {
@@ -46,13 +46,13 @@ div.quip {
 
 #content {
     font-family: sans-serif;
-    width: 65em;
-    margin: auto;
+    width: 73em;
 }
 #index_header {
     border-bottom: 3px solid #651023;
     padding-bottom: 0.5em;
     margin-bottom: 5px;
+    margin-left: 8em;
 }
 .index_link {
     font-size: 16pt; 
@@ -135,13 +135,16 @@ div.quip {
   font-size: 90%;
 }
 
-#sort_options {
-    position: absolute;
-    width: 20%;
-    margin:0;
-    left: -21%;
-    top: 0;
+#quip_list {
+  float:left;
+  width:65em;
 }
+
+#sort_options {
+    float:left;
+    width: 8em;
+}
+
 #sort_options a {
     padding: 3px;
     display:block;
@@ -153,7 +156,7 @@ div.quip {
     background: #DDD;
 }
 
-#sort_options #selected_sort {
+#sort_options .selected_sort {
     background: grey;
     color: #FC8; 
 }

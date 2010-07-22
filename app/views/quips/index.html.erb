@@ -1,35 +1,15 @@
-
-<div id="quips">
-  <div id="sort_options">
-      <a id="<%="selected_sort" if params[:sort]=="votes"%>" href="quips?sort=votes">Highest Rated</a>
-      <a id="<%="selected_sort" if params[:sort]=="date" && params[:direction]==nil%>"href="quips?sort=date">Newest</a>
-      <a id="<%="selected_sort" if params[:sort]=="date" && params[:direction]=="asc"%>"href="quips?sort=date&direction=asc">Oldest</a>
-  </div>
-  <% if @quips.length > 0 %>
-    <% for quip in @quips %>
-        <div class="quip">
-            <span style="font-family: monospace;">
-                <%= link_to "\##{quip.id}", quip %>
-                <span id=<%=h "plus#{quip.id}"%>>
-                  <!-- The following ugliness is due to newlines generating spaces for no reason.
-                  Damn you mozilla. -->
-                <%= link_to_remote "+", 
-                    :url => vote_url(quip.id, :type => "up"),
-                    :update => "vote_#{quip.id}",
-                    :loading => "$('plus#{quip.id}').update('+');$('minus#{quip.id}').update('-');"%></span>(<span id="vote_<%=quip.id%>"><%=h quip.votes %></span>)<span id=<%=h "minus#{quip.id}"%>><%= link_to_remote "-", 
-                    :url => vote_url(quip.id, :type => "down"),
-                    :update => "vote_#{quip.id}",
-                    :loading => "$('minus#{quip.id}').update('-');$('plus#{quip.id}').update('+');"%>
-                </span>
-            </span>
-            <div class="quip_text">
-                <%=simple_format(html_escape(quip.quip)) %>
-            </div>
-        </div>
-    <% end %>
-    <%= will_paginate @quips %>
-  <% else %>
-    No quotes entered.
-  <% end %>
+<script type="text/javascript">
+  document.observe('dom:loaded', function() {
+      if(sort_type = $('sort_<%= @sort %>')){
+      sort_type.addClassName('selected_sort');}});
+</script>
+<div id="sort_options">
+  <a id="sort_votes" href="quips?sort=votes">Highest Rated</a>
+  <a id="sort_newest" href="quips?sort=newest">Newest</a>
+  <a id="sort_oldest" href="quips?sort=oldest">Oldest</a>
+</div>
+<div id="quip_list">
+  <%= render :partial => "quip", :collection => @quips %>
+  <%= will_paginate @quips %>
 </div>
 
