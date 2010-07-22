@@ -1,0 +1,20 @@
+<div>
+  <h2> Quips API </h2>
+  <ol>
+    <li><%=link_to 'Create', :controller => 'api_keys', :action => 'new' %> an API key </li>
+    <li>Send a POST request with the following keys and information:
+      <ul>
+        <li>Post to: http://stillraging.net/resquip/quips</li>
+        <li>apikey = (your API key)</li>
+        <li>quip[date] = MM-DD-YY (optional)</li>
+        <li>quip[quip] = (quip string here)</li>
+      </ul>
+    <li>...</li>
+    <li>Profit!</li>
+  </ol>
+  You can test the string using curl, like so: 
+  <pre>
+  curl -d "apikey=7e9e653fa6c1a83050b618a72&amp;quip[date]=2010-05-12&amp;quip[quip]=testing;" stillraging.net/resquip/quips
+  </pre>
+</div>
+    
