@@ -47,6 +47,8 @@ div.quip {
 #content {
     font-family: sans-serif;
     width: 73em;
+    margin-left: auto;
+    margin-right:auto;
 }
 #index_header {
     border-bottom: 3px solid #651023;
@@ -140,10 +142,16 @@ div.quip {
   width:65em;
 }
 
-#sort_options {
+#left_sidebar {
     float:left;
     width: 8em;
+  }
+#main_content {
+  float:right;
+  width:65em;
 }
+
+
 
 #sort_options a {
     padding: 3px;

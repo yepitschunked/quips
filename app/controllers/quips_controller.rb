@@ -132,4 +132,7 @@ class QuipsController < ApplicationController
     end
     render :text => Quip.find(params[:id]).votes
   end
+
+  def api_info
+  end
 end

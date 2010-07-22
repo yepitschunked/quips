@@ -17,7 +17,12 @@
 <div id="content">
     <%= render :partial => "quips_header" %>
 <p style="color: green"><%= flash[:notice] %></p>
+<div id="left_sidebar">
+  <%= yield :left_sidebar %>
+</div>
+<div id="main_content">
 <%= yield  %>
+</div>
 </div>
 
 </body>

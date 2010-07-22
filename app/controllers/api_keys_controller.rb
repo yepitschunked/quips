@@ -3,6 +3,7 @@ class ApiKeysController < ApplicationController
 
   def check_admin_mode
     unless true #i'm a hacky hacky switch!
+      flash[:notice] = "You can't go there!"
       redirect_to :back 
     end
   end

@@ -3,11 +3,13 @@
       if(sort_type = $('sort_<%= @sort %>')){
       sort_type.addClassName('selected_sort');}});
 </script>
+<% content_for :left_sidebar do %>
 <div id="sort_options">
   <a id="sort_votes" href="quips?sort=votes">Highest Rated</a>
   <a id="sort_newest" href="quips?sort=newest">Newest</a>
   <a id="sort_oldest" href="quips?sort=oldest">Oldest</a>
 </div>
+<% end %>
 <div id="quip_list">
   <%= render :partial => "quip", :collection => @quips %>
   <%= will_paginate @quips unless @quips.nil? %>
