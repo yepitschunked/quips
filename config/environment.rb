@@ -25,7 +25,8 @@ Rails::Initializer.run do |config|
   
   config.gem "will_paginate", 
       :lib => 'will_paginate',
-      :source => 'http://gems.github.com'
+      :version => '~> 2.3.11', :source => 'http://gemcutter.org'
+      
   config.gem "recaptcha",
       :lib => "recaptcha/rails"
 
