@@ -74,18 +74,14 @@ div.quip {
     color: #444;
 }
 
-#addnew a:hover {
-    color: #002200;
-}
-#addnew_plus {
-    color: #77CC77;
-}
-#random a:hover {
-    color: #000022;
-}
-#random_O {
-    color: #7777CC;
-}
+#addnew a:hover { color: #002200; }
+#addnew_plus { color: #77CC77; }
+#addnew a:hover #addnew_plus { color: #007711; } 
+
+#random a:hover { color: #000022; }
+#random_O { color: #7777CC; }
+#random a:hover #random_O { color: #001177; }
+
 
 #search {
   width: 10em;
