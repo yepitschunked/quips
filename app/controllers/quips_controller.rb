@@ -30,7 +30,7 @@ class QuipsController < ApplicationController
     if @query.blank?
       @results = []
     else
-      @results = Quip.find(:all, :conditions => [ "quip like ?", "%#{@query}%" ])
+      @results = Quip.where([ "quip like ?", "%#{@query}%" ])
     end
     respond_to do |format|
       format.json { render :json => @results.to_json(:only => [:id, :quip]) }

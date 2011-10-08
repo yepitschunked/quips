@@ -1,4 +1,15 @@
 Quips::Application.routes.draw do
+  resources :api_keys
+  resources :quips do
+    collection do
+      get :api_info
+      post :vote
+      post :ajax_autocomplete
+    end
+  end
+
+  root :to => "quips#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

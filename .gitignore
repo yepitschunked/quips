@@ -4,3 +4,4 @@ log/*.log
 tmp/**/*
 *.rails2
 config/environments/*.rb
+*.swp

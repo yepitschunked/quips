@@ -16,21 +16,23 @@
   <b>Score:</b>
   <span id="votes"><%=h @quip.votes %></span>
   <span id="upvote">
-  <%= link_to_remote "Upvote", 
-      :url => vote_url(@quip.id, :type => "up"),
-      :update => "votes",
-      :loading => "$('upvote').update('');$('downvote').update('');"%>
+  <%= link_to "Upvote", 
+      vote_url(@quip.id, :type => "up"),
+      :remote => true
+#      :update => "votes",
+#      :loading => "$('upvote').update('');$('downvote').update('');"%>
   </span>
   <span id="downvote">
-  <%= link_to_remote "Downvote", 
-      :url => vote_url(@quip.id, :type => "down"),
-      :update => "votes",
-      :loading => "$('upvote').update('');$('downvote').update('');"%>
+  <%= link_to "Downvote", 
+       vote_url(@quip.id, :type => "down"),
+       :remote => true
+#      :update => "votes",
+#      :loading => "$('upvote').update('');$('downvote').update('');"%>
   </span>
 </p>
 
 <div class="quip_text">
-  <%=simple_format(html_escape(@quip.quip)) %>
+  <%= @quip.quip %>
 </div>
 
 
