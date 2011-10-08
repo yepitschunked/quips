@@ -3,3 +3,4 @@ db/*.sqlite3
 log/*.log
 tmp/**/*
 *.rails2
+config/environments/*.rb
