@@ -1,9 +1,9 @@
 Quips::Application.routes.draw do
   resources :api_keys
   resources :quips do
+    post :vote
     collection do
       get :api_info
-      post :vote
       post :ajax_autocomplete
     end
   end

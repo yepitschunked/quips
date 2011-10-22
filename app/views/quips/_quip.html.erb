@@ -2,17 +2,13 @@
 	<%= link_to "\##{quip.id}", quip %>
 	<span id=<%=h "plus#{quip.id}"%>>
 		<%= link_to "+", 
-			vote_url(quip.id, :type => "up"),
-            :remote => true
-#			:update => "vote_#{quip.id}",
-#			:loading => "$('plus#{quip.id}').update('+');$('minus#{quip.id}').update('-');"-%>
+          {:controller => :quips, :id => quip.id, :type => 'up'},
+            :remote => true %>
 	</span>
 	(<span id="vote_<%=quip.id%>"><%=h quip.votes %></span>)
 	<span id=<%=h "minus#{quip.id}"%>><%= link_to "-", 
-			vote_url(quip.id, :type => "down"),
-            :remote => true
-#			:update => "vote_#{quip.id}",
-#			:loading => "$('minus#{quip.id}').update('-');$('plus#{quip.id}').update('+');"-%>
+      {:controller => :quips, :id => quip.id, :type => 'down'},
+      :remote => true %>
 	</span>
 </span>
 <div class="quip_display">

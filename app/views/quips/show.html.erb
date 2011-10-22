@@ -17,17 +17,13 @@
   <span id="votes"><%=h @quip.votes %></span>
   <span id="upvote">
   <%= link_to "Upvote", 
-      vote_url(@quip.id, :type => "up"),
-      :remote => true
-#      :update => "votes",
-#      :loading => "$('upvote').update('');$('downvote').update('');"%>
+    {:controller => :quips, :id => @quip.id, :type => 'up'},
+      :remote => true %>
   </span>
   <span id="downvote">
   <%= link_to "Downvote", 
-       vote_url(@quip.id, :type => "down"),
-       :remote => true
-#      :update => "votes",
-#      :loading => "$('upvote').update('');$('downvote').update('');"%>
+    {:controller => :quips, :id => @quip.id, :type => 'down'},
+       :remote => true %>
   </span>
 </p>
 
