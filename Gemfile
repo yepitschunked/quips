@@ -16,6 +16,8 @@ group :development do
   gem 'ruby-debug'
 end
 
+gem 'dynamic_form'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
