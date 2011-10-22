@@ -11,6 +11,10 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'will_paginate'
 gem 'recaptcha', :require => 'recaptcha/rails'
 
+group :development do
+  gem 'ruby-debug'
+end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
