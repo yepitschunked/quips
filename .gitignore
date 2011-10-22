@@ -5,3 +5,4 @@ tmp/**/*
 *.rails2
 config/environments/*.rb
 *.swp
+config/initializers/secret_token.rb
