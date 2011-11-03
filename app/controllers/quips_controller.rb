@@ -1,5 +1,4 @@
 class QuipsController < ApplicationController
-  verify :xhr => true, :only => :ajax_autocomplete
   skip_before_filter :verify_authenticity_token, :only => :create
   # GET /quips
   # GET /quips.xml
