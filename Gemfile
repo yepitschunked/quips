@@ -8,7 +8,7 @@ gem 'jquery-rails'
 
 gem 'mongrel'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'pg'
 
 group :assets do 
   gem 'sass-rails'
