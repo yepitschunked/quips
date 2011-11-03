@@ -9,6 +9,11 @@ gem 'jquery-rails'
 gem 'mongrel'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
+
+group :assets do 
+  gem 'sass-rails'
+end
+
 gem 'will_paginate'
 gem 'recaptcha', :require => 'recaptcha/rails'
 
