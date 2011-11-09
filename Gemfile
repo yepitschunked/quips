@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'mongrel'
 
 gem 'pg'
+gem 'haml'
 
 group :assets do 
   gem 'sass-rails'

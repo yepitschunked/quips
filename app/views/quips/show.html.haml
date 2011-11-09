@@ -1,0 +1,25 @@
+%p
+  %b Source:
+  = h @quip.source
+%p
+  %b Submitter:
+  = h @quip.submitter
+%p
+  %b Date:
+  = h @quip.date
+%p
+  %b Score:
+  %span#votes= h @quip.votes
+  %span#upvote
+    = link_to "Upvote",                                        |
+      {:controller => :quips, :id => @quip.id, :type => 'up'}, |
+      :remote => true                                          |
+  %span#downvote
+    = link_to "Downvote",                                        |
+      {:controller => :quips, :id => @quip.id, :type => 'down'}, |
+      :remote => true                                            |
+.quip_text
+  = @quip.quip
+= link_to 'Edit', edit_quip_path(@quip)
+|
+\#{link_to 'Back', quips_path}

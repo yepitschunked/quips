@@ -1,0 +1,31 @@
+%h1 New quip
+= form_for(@quip) do |f|
+  = f.error_messages
+  = f.label :date
+  \:
+  \#{f.date_select :date}
+  %br/
+  = f.text_area :quip, :size => "50x7"
+  %br/
+  = recaptcha_tags
+  = f.submit "Create"
+  :javascript
+    $('quip_quip').defaultValue = 'Enter your quip here...';
+    $('quip_quip').observe('focus', function(e) {
+        if(this.value == this.defaultValue) {
+            this.value = "";
+        }
+        this.setStyle({color: 'black'});
+    });
+    $('quip_quip').observe('blur', function(e) {
+        if(this.value == "") {
+            this.value = this.defaultValue;
+            this.setStyle({color: 'grey'});
+        }
+    });
+    $('new_quip').observe('submit', function(e) {
+        if($('quip_quip').value == $('quip_quip').defaultValue) {
+            $('quip_quip').value = "";
+        }
+    });
+    

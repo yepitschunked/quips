@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html;charset=UTF-8", "http-equiv" => "content-type"}/
+    %title
+      Quips: #{controller.action_name}
+    = javascript_include_tag "application"
+    = stylesheet_link_tag "application"
+    %title Quips
+    = csrf_meta_tag
+  %body
+    #content
+      = render :partial => "quips_header"
+      %p{:style => "color: green"}= flash[:notice]
+      #left_sidebar
+        = yield :left_sidebar
+      #main_content
+        = yield

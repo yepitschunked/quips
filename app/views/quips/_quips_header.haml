@@ -1,0 +1,17 @@
+#index_header
+  %ul.horizontal
+    %li#home.index_link
+      = link_to 'WHAT YOU SAY???', quips_path
+    %li#addnew.index_link
+      = link_to new_quip_path do
+        %span#addnew_plus +
+        add quip
+    %li#random.index_link
+      = link_to quip_path('random') do
+        %span#random_O O
+        random
+    %li#search
+      %input#search_box{:tabindex => "0", :value => "Search..."}/
+      #results{:style => "display:none;"}
+    %li
+      = link_to 'api info', '/quips/api_info'
