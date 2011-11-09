@@ -7,3 +7,6 @@ config/environments/*.rb
 *.swp
 config/initializers/secret_token.rb
 config/initializers/recaptcha.rb
+config/development.sphinx.conf
+db/sphinx/
+log/
