@@ -3,9 +3,13 @@
 
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 
 //voting
 $(function() {
+  $('#search_box').autocomplete({
+    source: '/quips/ajax_autocomplete'
+  });
   function disable_voting() {
     $('#upvote').html('');
     $('#downvote').html('');

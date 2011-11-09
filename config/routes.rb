@@ -4,7 +4,7 @@ Quips::Application.routes.draw do
     post :vote
     collection do
       get :api_info
-      post :ajax_autocomplete
+      get :ajax_autocomplete
     end
   end
 

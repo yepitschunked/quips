@@ -25,14 +25,10 @@ class QuipsController < ApplicationController
   end
 
   def ajax_autocomplete
-    @query = params[:query]
-    if @query.blank?
-      @results = []
-    else
-      @results = Quip.where([ "quip like ?", "%#{@query}%" ])
-    end
+    @term = params[:term]
+    @results = Quip.search(@term)
     respond_to do |format|
-      format.json { render :json => @results.to_json(:only => [:id, :quip]) }
+      format.json { render :json => @results.as_json(:type => :autocomplete) }
     end
   end
 
