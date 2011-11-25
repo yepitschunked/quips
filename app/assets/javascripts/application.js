@@ -7,18 +7,10 @@
 
 //voting
 $(function() {
-  $('#search_box').autocomplete({
-    source: '/quips/ajax_autocomplete'
-  });
   function disable_voting() {
     $('#upvote').html('');
     $('#downvote').html('');
   }
-
   $('#upvote').bind('ajax:loading', function() { disable_voting(); });
   $('#upvote').bind('ajax:complete', function(data) { $('#votes').html(data); });
-  $('#search_box').focus(function(e) {
-      $(this).css({color: "black"});
-      $(this).value="";
-  });
 });
