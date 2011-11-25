@@ -148,21 +148,32 @@ div.quip {
 }
 
 
-
-#sort_options a {
+#sort_options {
+  position: fixed;
+ a {
     padding: 3px;
     display:block;
     margin-bottom: 3px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
-}
-#sort_options a:hover {
-    background: #DDD;
+    &:hover {
+      background: #DDD;
+    }
+    &.selected {
+      background: grey;
+      color: #FC8; 
+    }
+  }
 }
 
-#sort_options .selected_sort {
-    background: grey;
-    color: #FC8; 
+.ui-autocomplete {
+  li.ui-menu-item {
+    font-size: 10px;
+    max-width: 400px;
+    span.match {
+      font-weight: bold;
+    }
+  }
 }
 
 

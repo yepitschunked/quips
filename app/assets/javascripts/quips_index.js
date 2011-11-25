@@ -1,13 +1,4 @@
 var quips_scroller = {};
-$(function() {
-  $('#search_box').autocomplete({
-    source: '/quips/ajax_autocomplete'
-  });
-  $('#search_box').focus(function(e) {
-      $(this).css({color: "black"});
-      $(this).value="";
-  });
-});
 
 // infinite scrolling, https://github.com/amatsuda/kaminari/wiki/How-To:-Create-Infinite-Scrolling-with-jQuery
 $(function() {
