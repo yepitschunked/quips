@@ -3,23 +3,28 @@ class QuipsController < ApplicationController
   # GET /quips
   # GET /quips.xml
   def index
-    if Quip.exists?
-      if params.has_key?(:sort)
-        case params[:sort]
-        when "votes"
-          @quips = Quip.paginate :page => params[:page], :order => "votes desc"
-        when "newest"
-          @quips = Quip.paginate :page => params[:page], :order => "created_at desc"
-        when "oldest"
-          @quips = Quip.paginate :page => params[:page], :order => "created_at asc"
-        end
-      else
-        @quips = Quip.paginate :page => params[:page], :order => "created_at desc"
-      end
-    end
+    order = case (params[:sort] || session[:sort])
+            when "votes"
+              'votes desc'
+            when "newest"
+              'created_at desc'
+            when "oldest"
+              'created_at asc'
+            else
+              'created_at desc'
+            end
+    sort_changed = params[:sort] && (session[:sort] != params[:sort])
+    @quips = Quip.order(order).page(params[:page]).per(15)
+    session[:sort] ||= params[:sort]
 
     respond_to do |format|
       format.html # index.html.erb
+      format.js { 
+        # If the sort has changed, re-render from page 1; otherwise, 
+        # show the next page of results
+        js_view_to_render = sort_changed ? :index : :next_page
+        @quips.any? ? render(js_view_to_render) : head(:not_found) 
+      }
       format.xml  { render :xml => @quips }
     end
   end

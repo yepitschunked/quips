@@ -54,6 +54,8 @@ GEM
       railties (~> 3.0)
       thor (~> 0.14)
     json (1.6.1)
+    kaminari (0.12.4)
+      rails (>= 3.0.0)
     kgio (2.6.0)
     linecache (0.43)
     mail (2.3.0)
@@ -136,7 +138,6 @@ GEM
       kgio (~> 2.4)
       rack
       raindrops (~> 0.6)
-    will_paginate (3.0.2)
 
 PLATFORMS
   ruby
@@ -146,6 +147,7 @@ DEPENDENCIES
   dynamic_form
   haml
   jquery-rails
+  kaminari
   mongrel
   pg
   rails (= 3.1)
@@ -154,4 +156,3 @@ DEPENDENCIES
   sass-rails
   thinking-sphinx
   unicorn
-  will_paginate

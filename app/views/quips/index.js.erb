@@ -1,0 +1,3 @@
+$('#quip_list').html('<%= escape_javascript(render :partial => 'quip.html.haml', :collection => @quips) %>');
+quips_scroller['page'] = 1;
+quips_scroller['loading'] = false;

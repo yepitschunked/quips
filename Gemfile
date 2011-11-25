@@ -16,7 +16,7 @@ group :assets do
   gem 'sass-rails'
 end
 
-gem 'will_paginate'
+gem 'kaminari'
 gem 'recaptcha', :require => 'recaptcha/rails'
 
 group :development do
