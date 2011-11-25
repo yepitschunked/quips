@@ -1,3 +1,9 @@
-$('#quip_list').html('<%= escape_javascript(render :partial => 'quip.html.haml', :collection => @quips) %>');
-quips_scroller['page'] = 1;
-quips_scroller['loading'] = false;
+$('#quip_list').fadeOut(250, function() {
+  $('#quip_list').html('<%= escape_javascript(render :partial => 'quip.html.haml', :collection => @quips) %>');
+  quips_scroller['page'] = 1;
+  quips_scroller['loading'] = false;
+  $('#sort_options a').removeClass('selected');
+  $('#sort_options a#sort_<%= session[:sort] %>').addClass('selected');
+  $('#quip_list').show();
+  window.scrollTo(0,0);
+});

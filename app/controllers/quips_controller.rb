@@ -3,19 +3,18 @@ class QuipsController < ApplicationController
   # GET /quips
   # GET /quips.xml
   def index
-    order = case (params[:sort] || session[:sort])
+    sort = params[:sort] || session[:sort] || 'newest'
+    order = case sort
             when "votes"
               'votes desc'
             when "newest"
               'created_at desc'
             when "oldest"
               'created_at asc'
-            else
-              'created_at desc'
             end
-    sort_changed = params[:sort] && (session[:sort] != params[:sort])
+    sort_changed = sort != session[:sort]
     @quips = Quip.order(order).page(params[:page]).per(15)
-    session[:sort] ||= params[:sort]
+    session[:sort] = sort
 
     respond_to do |format|
       format.html # index.html.erb
@@ -31,7 +30,7 @@ class QuipsController < ApplicationController
 
   def ajax_autocomplete
     @term = params[:term]
-    @results = Quip.search(@term)
+    @results = Quip.search("#{@term}*")
     respond_to do |format|
       format.json { render :json => @results.as_json(:type => :autocomplete) }
     end

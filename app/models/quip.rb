@@ -11,8 +11,10 @@ class Quip < ActiveRecord::Base
     set_property :min_prefix_len => 2
   end
   def as_json(options = {})
-    if options[:type] == :autocomplete
-      {:label => quip, :value => id}
+    if options[:type] == :autocomplete 
+      # excerpts comes from sphinx - if it's autocomplete, this method
+      # should be injected as we used sphinx to find this object
+      {:label => excerpts.quip, :value => id}
     end
   end
 end
