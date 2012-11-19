@@ -1,17 +1,16 @@
-#index_header
-  %ul.horizontal
-    %li#home.index_link
-      = link_to 'WHAT YOU SAY???', quips_path
-    %li#addnew.index_link
+#index_header.navbar.clearfix
+  %a.brand{href: quips_path} WHAT YOU SAY???
+  %ul.nav
+    %li#addnew
       = link_to new_quip_path do
         %span#addnew_plus +
         add quip
-    %li#random.index_link
+    %li#random
       = link_to quip_path('random') do
         %span#random_O O
         random
-    %li#search
-      %input#search_box{:tabindex => "0", :placeholder => 'Search', :type => 'search'}
-      #results{:style => "display:none;"}
     %li
       = link_to 'api info', '/quips/api_info'
+  %form.navbar-search.pull-right
+    %input.search-query{:tabindex => "0", :placeholder => 'Search', :type => 'search'}
+    #results{:style => "display:none;"}

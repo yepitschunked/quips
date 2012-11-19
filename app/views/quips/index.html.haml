@@ -1,9 +1,9 @@
 - content_for :page_head do
   = javascript_include_tag 'quips_index'
-- content_for :left_sidebar do
+#quip_list{'ng-app' => true}
   #sort_options
     = link_to 'Highest Rated', {:controller => :quips, :sort => :votes}, :remote => true, :id => 'sort_votes', :class => ('selected' if session[:sort] == 'votes')
     = link_to 'Newest', {:controller => :quips, :sort => :newest}, :remote => true, :id => 'sort_newest', :class => ('selected' if session[:sort] == 'newest' || session[:sort].blank?)
     = link_to 'Oldest', {:controller => :quips, :sort => :oldest}, :remote => true, :id => 'sort_oldest', :class => ('selected' if session[:sort] == 'oldest')
-#quip_list
-  = render :partial => "quip", :collection => @quips
+  #listing
+    = render :partial => "quip", :collection => @quips

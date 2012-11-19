@@ -1,77 +1,33 @@
-.quip_display {
-    font-family: monospace;
-}
-ul,ol,li {
-    padding: 0;
-    margin: 0;
+$linkColor: #A40;
+$darkRed: #651023;
+$linkColorHover: lighten($linkColor, 10%);
+@import "bootstrap";
+
+#index_header {
+  li { line-height: 24px; }
+  .brand {
+    font-size: 24px;
+    color: $gray;
+    font-weight: bold;
+  }
+  border-bottom: 3px solid $darkRed;
 }
 
 ul.horizontal {
     list-style-type: none;
 }
 ul.horizontal li {
-    display:inline;
+    display:inline-block;
 }
 
-
-
-#quips {
-    width:60em;
-    position:relative;
+#sort_options {
+  position: fixed;
+  text-align: right;
+  width: 100px;
 }
 
-div.fieldWithErrors {
-    display:inline;
-}
-
-form.new_quip textarea {
-    font-family: sans-serif;
-    color: grey;
-}
-form.new_quip #quip_submit {
-    font-size:200%;
-}
-
-table,td {
-    margin: 0px;
-    padding: 0px;
-}
-h1,p {
-    margin-top:3px;
-    margin-bottom:3px;
-}
-div.quip {
-    margin: 15px 2px;
-}
-
-#content {
-    font-family: sans-serif;
-    width: 73em;
-    margin-left: auto;
-    margin-right:auto;
-}
-#index_header {
-    border-bottom: 3px solid #651023;
-    padding-bottom: 0.5em;
-    margin-bottom: 5px;
-    margin-left: 8em;
-}
-.index_link {
-    font-size: 16pt; 
-    font-weight: bold;
-    margin-right: 1em;
-}
-.index_link a {
-    color: #AAA;
-    text-decoration: none;
-}
-.index_link a:hover {
-    background: none;
-}
-
-#home a {
-    font-size: 125%;
-    color: #444;
+#listing {
+  margin-left: 110px;
 }
 
 #addnew a:hover { color: #002200; }
@@ -83,24 +39,6 @@ div.quip {
 #random a:hover #random_O { color: #001177; }
 
 
-#search {
-  width: 10em;
-  position: relative;
-  float: right;
-  top: 10px;
-  margin-right: 20px;
-}
-#search_box {
-  width: inherit;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border: 1px solid grey;
-  background: image-url('searchIcon.gif') no-repeat 3px 1px;
-  height: 20px;
-  padding-left: 18px;
-  outline: none;
-  color: grey;
-}
 #results {
   border: 1px solid black;
   width: 28.4em;
@@ -133,23 +71,7 @@ div.quip {
   font-size: 90%;
 }
 
-#quip_list {
-  float:left;
-  width:65em;
-}
-
-#left_sidebar {
-    float:left;
-    width: 8em;
-  }
-#main_content {
-  float:right;
-  width:65em;
-}
-
-
 #sort_options {
-  position: fixed;
  a {
     padding: 3px;
     display:block;

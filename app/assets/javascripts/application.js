@@ -3,8 +3,10 @@
 
 //= require jquery
 //= require jquery_ujs
-//= require jquery-ui
+//= require jquery.ui.all
+//= require angular
 
+$(function() { $('.datepicker').datepicker(); });
 /* this allows us to pass in HTML tags to autocomplete. Without this they get escaped */
 $[ "ui" ][ "autocomplete" ].prototype["_renderItem"] = function( ul, item) {
 return $( "<li></li>" ) 
@@ -14,14 +16,10 @@ return $( "<li></li>" )
 };
 
 $(function() {
-  $('#search_box').autocomplete({
+  $('.navbar-search .search-query').autocomplete({
     source: '/quips/ajax_autocomplete',
     position: {my: 'right top', at: 'right bottom'},
     select: function(e, ui) { window.location = "/quips/"+ui.item.value; return false;}
-  });
-  $('#search_box').focus(function(e) {
-      $(this).css({color: "black"});
-      $(this).value="";
   });
 });
 

@@ -1,0 +1,12 @@
+= form_for(@quip) do |f|
+  = f.label :source
+  = f.text_field :source
+  = f.label :submitter
+  = f.text_field :submitter
+  = f.label :date
+  = f.text_field :date, class: 'datepicker'
+  = f.label :quip
+  = f.text_area :quip, size: '50x7'
+  - if @quip.new_record?
+    = recaptcha_tags
+  = f.submit

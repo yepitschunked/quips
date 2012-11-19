@@ -7,4 +7,4 @@
 )
 <span id=#{h "minus#{quip.id}"}>#{link_to "-",  {:controller => :quips, :id => quip.id, :type => 'down'}, :remote => true}
 .quip_display
-  = quip.quip
+  %pre= quip.quip

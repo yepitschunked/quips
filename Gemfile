@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '~> 3.2'
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'thinking-sphinx'
 
 # Bundle edge Rails instead:
@@ -14,6 +15,7 @@ gem 'haml'
 
 group :assets do
   gem 'sass-rails'
+  gem 'bootstrap-sass'
 end
 
 gem 'kaminari'
