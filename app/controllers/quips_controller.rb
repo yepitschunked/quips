@@ -134,4 +134,13 @@ class QuipsController < ApplicationController
 
   def api_info
   end
+
+  private
+  def verify_recaptcha(*args)
+    if Rails.env.test?
+      true
+    else
+      super(*args)
+    end
+  end
 end
