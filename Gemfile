@@ -19,8 +19,13 @@ end
 gem 'kaminari'
 gem 'recaptcha', :require => 'recaptcha/rails'
 
-group :development do
+group :development, :test do
   gem 'debugger'
+  gem 'rspec-rails'
+  gem 'capybara-webkit'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
+  gem 'launchy'
 end
 
 # Deploy with Capistrano
