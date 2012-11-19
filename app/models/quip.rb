@@ -9,6 +9,7 @@ class Quip < ActiveRecord::Base
   define_index do
     indexes quip, :prefixes => true
     set_property :min_prefix_len => 2
+    set_property delta: true
   end
   def as_json(options = {})
     if options[:type] == :autocomplete 
