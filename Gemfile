@@ -22,8 +22,12 @@ gem 'kaminari'
 gem 'recaptcha', :require => 'recaptcha/rails'
 
 group :development, :test do
-  gem 'debugger'
+  gem 'byebug'
+  gem 'pry-rails'
   gem 'rspec-rails'
+end
+
+group :test do
   gem 'capybara-webkit'
   gem 'database_cleaner'
   gem 'factory_girl_rails'
