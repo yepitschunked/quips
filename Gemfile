@@ -16,6 +16,7 @@ gem 'haml'
 group :assets do
   gem 'sass-rails'
   gem 'bootstrap-sass'
+  gem 'uglifier'
 end
 
 gem 'kaminari'
