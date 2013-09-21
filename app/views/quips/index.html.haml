@@ -1,5 +1,3 @@
-- content_for :page_head do
-  = javascript_include_tag 'quips_index'
 #quip_list{'ng-app' => true}
   #sort_options
     = link_to 'Highest Rated', {:controller => :quips, :sort => :votes}, :remote => true, :id => 'sort_votes', :class => ('selected' if session[:sort] == 'votes')

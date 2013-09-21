@@ -5,6 +5,7 @@
 //= require jquery_ujs
 //= require jquery.ui.all
 //= require angular
+//= require quips_index
 
 $(function() { $('.datepicker').datepicker(); });
 /* this allows us to pass in HTML tags to autocomplete. Without this they get escaped */

@@ -4,14 +4,15 @@
     %meta{:content => "text/html;charset=UTF-8", "http-equiv" => "content-type"}/
     %title
       Quips: #{controller.action_name}
-    = javascript_include_tag "application"
     = stylesheet_link_tag "application"
-    = stylesheet_link_tag "jquery-ui-1.8.16.custom"
     = yield :page_head
     %title Quips
     = csrf_meta_tag
   %body
     .container
       = render :partial => "quips_header"
-      %p{:style => "color: green"}= flash[:notice]
       = yield
+
+    = javascript_include_tag "application"
+    = yield :javascript
+
