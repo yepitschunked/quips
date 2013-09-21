@@ -4,18 +4,14 @@ class Quip < ActiveRecord::Base
   @@sortable_columns = ["votes", "date", "id"]
   @@sort_directions = ["asc", "desc"]
 
+  include Tire::Model::Search
+  include Tire::Model::Callbacks
+
   validates_presence_of :quip
 
-  define_index do
-    indexes quip, :prefixes => true
-    set_property :min_prefix_len => 2
-    set_property delta: true
-  end
   def as_json(options = {})
     if options[:type] == :autocomplete 
-      # excerpts comes from sphinx - if it's autocomplete, this method
-      # should be injected as we used sphinx to find this object
-      {:label => excerpts.quip, :value => id}
+      {:label => quip, :value => id}
     end
   end
 end
